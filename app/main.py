@@ -74,6 +74,7 @@ async def upload_file(
 
     # Generate HTML for the stats table
     stats_html = generate_stats_html()
+    password_used = "כן" if password else "לא"
 
     # Return combined HTML fragments
     return f"""
@@ -81,9 +82,8 @@ async def upload_file(
         <td class="py-2 px-4">{file.filename}</td>
         <td class="py-2 px-4">{form_name}</td>
         <td class="py-2 px-4">{category}</td>
-        <td class="py-2 px-4">
-            <span class="px-2 py-1 {status_class} rounded-full text-xs">{status}</span>
-        </td>
+        <td class="py-2 px-4">{password_used}</td>
+
     </tr>
     <script>
         document.getElementById('stats-container').innerHTML = `{stats_html}`;
