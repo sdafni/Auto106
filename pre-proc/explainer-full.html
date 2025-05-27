@@ -1,0 +1,2970 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- מאסטר חיצוני ללא מסגרת, תאריך עדכון אחרון 12-02-2017 -->
+<head id="masterHead"><title>
+	רשות המיסים
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="/shSimulatorMas/ruxitagentjs_ICANVfgqrux_10297240712040816.js" data-dtconfig="rid=RID_715896754|rpid=1720796936|domain=taxes.gov.il|reportUrl=/shSimulatorMas/rb_b70a1f86-be69-4ddc-b6f5-a511070ea2de|app=ea7c4b59f27d43eb|cuc=y6gmvhfk|mel=100000|featureHash=ICANVfgqrux|dpvc=1|lastModification=1747034435081|tp=500,50,0|rdnt=0|uxrgce=1|agentUri=/shSimulatorMas/ruxitagentjs_ICANVfgqrux_10297240712040816.js"></script><script type="text/javascript" language="javascript" src="/shaamAngularLib/jsLib/updatedjq/jquery-3.6.0.min.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" src="/shaamAngularlib/jsLib/updatedjq/jquery-ui.min.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" src="/shaamAngularlib/jsLib/updatedjq/jquery.mirgrate-3.3.2.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" charset="utf-8" src="/ShaamlibTemp/scripts2010/shaamAccessibleButtons.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" charset="utf-8" src="/ShaamlibTemp/scripts2010/shaamAccessibilty.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" charset="utf-8" src="/shaamlib/scripts2010/shaamTimeOutDialog.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" charset="utf-8" src="/shaamlib/scripts2010/ShaamTimeOutDialogInternet.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><link type="text/css" rel="stylesheet" href="/shSimulatorMas/ShaamMaster2010/styles/style.css?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></link>
+        <meta id="NewJquery" name="NewJquery" content="" />
+        <meta id="AppEnvironment" name="AppEnvironment" content="internet" />
+    <meta name="keywords" /><meta name="description" />
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+
+        	AccessibilityButtons.setAriaLabel();
+
+        var mode = sessionStorage.getItem("mode");
+        if (mode == "monoChrome") {
+            ChangeCssMonoChrome();
+        }
+        else if (mode == "contrast") {
+            ChangeCssContrast();
+        }
+        else if (mode == "standard") {
+            ChangeCssStandard();
+        }
+
+    function AddCss(href) {
+        var result = $("head").find("[data-bss]");
+        result.remove();
+        var element = document.createElement("link");
+        element.setAttribute("data-bss", "true");
+        element.setAttribute("rel", "stylesheet");
+        $("head").append($(element).attr("href", href));
+    }
+    function ChangeCssMonoChrome() {
+        sessionStorage.setItem("mode", "monoChrome");
+        var href = "../ShaamMaster2010/styles/monochrome.css";
+        AddCss(href);
+    }
+    function ChangeCssContrast() {
+        sessionStorage.setItem("mode", "contrast");
+        var href = "../ShaamMaster2010/styles/contrast.css";
+        AddCss(href);
+    }
+    function ChangeCssStandard() {
+        sessionStorage.setItem("mode", "standard");
+        //var href = "../ShaamMaster2010/styles/style.css";
+        var swNewJquery = document.getElementById("NewJquery");
+        var swNewJqueryValue = swNewJquery.content;
+        if (swNewJqueryValue == "1")
+            var href = "../ShaamMaster2010/bootstrap/styles/directives.css";
+        else
+            var href = "../ShaamMaster2010/styles/style.css";
+        AddCss(href);
+    }
+    }
+    );
+ </script>
+         <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        //    _paq.push(["setCookieDomain", "*.shaamweb"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        //
+        window.addEventListener('hashchange', function () {
+            //_paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
+            //  _paq.push(['setCustomUrl', window.location.pathname +"startpage.aspx" + window.location.hash.substr(1)]);
+            //   _paq.push(['setCustomUrl', window.location.pathname.toLowerCase() + "#" + window.location.hash.substr(1).toLowerCase()]);
+            if (document.getElementsByTagName("h3")[0] != undefined && document.getElementsByTagName("h3")[0] != null && document.getElementsByTagName("h3")[0] != "") {
+                _paq.push(['setCustomUrl', window.location.pathname + "#" + window.location.hash.substr(1) + "/" + document.getElementsByTagName("h3")[0].innerText]);
+            }
+            else {
+                _paq.push(['setCustomUrl', window.location.pathname + "#" + window.location.hash.substr(1)]);
+            }
+            //_paq.push(['setDocumentTitle', 'My New Title']);
+            _paq.push(['setDocumentTitle', document.title]);
+            _paq.push(['trackPageView']);
+        });
+        //
+        (function () {
+
+
+
+            var hostName = window.location.host.toLowerCase();
+            if (hostName == "secapp.taxes.gov.il") {
+                SiteId = document.getElementById("SiteIdCv").content;
+                var u = "//secapp.taxes.gov.il/matomosh/"; //for CV
+            }
+            if (hostName == "cvwebt.taxes.gov.il") {
+                SiteId = document.getElementById("SiteId-tCv").content;
+                //var u = "//matomosh.t-sh.shaam.gov.il/"; //for T-CV
+                var u = "//cvwebt.taxes.gov.il/"; //for T-CV
+
+            }
+            if (hostName == 'shaamweb') {
+                SiteId = document.getElementById("SiteId").content;
+                var u = "//10.83.71.115/matomosh/";//for shaamweb  (SH)
+            }
+            else if (hostName == 'shaamwebt') {
+                SiteId = document.getElementById("SiteId").content;
+                //var u = "//matomosh.t-sh.shaam.gov.il/";//for T-SH
+                var u = "//10.83.71.115/matomosh/";//for shaamweb  (SH)
+            }
+            // var u = "//matomo.t-sh.shaam.gov.il/matomo/";//for T-SH
+            if (u != undefined && (SiteId != null && SiteId != "" && SiteId != undefined)) {
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', SiteId]);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+            }//end if
+
+        })();
+
+    </script>
+
+    <!-- End Matomo Code -->
+<script type="text/javascript" language="javascript" src="/ShaamlibTemp/scripts2010/shaamGeneralFunctions.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" src="/shaamAngularLibTemp/scripts/shaam-pdf-viewer.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" src="/ShaamlibTemp/piwik/piwik.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script><script type="text/javascript" language="javascript" src="/ShaamlibTemp/googleAnalytics/googleAnalytics.js?gdv=4e4855c6-120e-49a0-ad57-715fcc84170d"></script></head>
+<body class="header_free">
+<form method="post" action="./frmHelp_2022.aspx" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY3MTgwMzU3NWRkNaszRy9MViejlUPaD9svZD8aW0uEmX5h9HVlEVtezXY=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7FE1EE1F" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAANPEbU678ks9iaK5YivtQvs3GNGk4G1AXYXEc7VpS7vDL33NqriX6YYYKb2tq4rfDwX4mVzXMHNuhlBPHFLet532ekiY2R5sarv7l6p5Szq3Q==" />
+</div>
+
+<div >
+
+
+		<div >
+
+
+    <title></title>
+    <meta content="JavaScript" name="vs_defaultClientScript">
+    <meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+    <link href="help.css" type="text/css" rel="stylesheet">
+
+    <script src="../../shaamlib/ShShumaJS/Dialog.js?ver=133914885264525494" language="javascript" type="text/javascript"></script>
+    <script src="../../shaamlib/scripts2010/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+    <script src="../../shaamlib/ShShumaJS/DLJSQuery.js?ver=133914885264525494" type="text/javascript"></script>
+    <script type="text/javascript" src="../Scripts/DLJS.js"></script>
+    <script src="../Scripts/FunctionsJS.js" type="text/javascript"></script>
+    <script src="../../shaamlib/ShShumaJS/Accessibilty.js?ver=133914885264525494" type="text/javascript"></script>
+
+    <script language="javascript">
+
+        //debugger
+        //alert(19)
+        var sHref;
+        var MilonMunachimWin;
+        var CNT_TITLE_HELP = "2022 דברי הסבר למילוי סימולטור לחישוב המס לשנת";
+        var CNT_MILON_MINAHIM = "MilonMunachim_2022.aspx";
+        var CNT_DA_AT_ZECUYUTECH = "http://ozar.mof.gov.il/taxes/docs/KnowYourRights2022.pdf";
+        var CNT_SHANTMAS = " 2022 ";
+        var CNT_LASR_SHANTMAS = " 2017 ";
+        var CNT_TERUMOT_HETEL = " 9,517,000 ";
+        var CNT_NEKUDAT_ZICUI_SHANA = " 2,676 ";
+        var CNT_NEKUDAT_ZICUI_HODESH = " 223 ";
+        var CNT_SECUM_MIZARI = " 190 ";
+        var CNT_SECUM_TIKRA = " 151,200 ";
+        var CNT_SECUM_TIKRA1 = " 188,544 ";
+        var CNT_SECUM_ZICUI = " 11,520 ";
+        var CNT_SECUM_ZICUI_UP = " 131,520 ";
+        var CNT_SECUM_ZICUI_NEGEV_MAHAZIT = " מחצית ";
+        var CNT_ZICUI_SHOTER = "5"
+        var CNT_FORCE_MAN_INCOME_ZICUI = " 163,920 "
+        var CNT_NIKUI_KEREN_ESTALMUT = " 270,000 "
+        var CNT_NETULMISHP = " 277,000 "
+        var CNT_NETUL = " 173,000 "
+        var CNT_SECUM_KIZBA = " 20,258 ";
+        var CNT_TIKRA_112_113 = " 316,530 ";
+        var CNT_SECUM_YEGIA = " 409,200 ";
+        var CNT_SECUM_NO_YEGIA = " 75,360 ";
+        var CNT_NECHES_HUL = " 2,018,000 "
+        var CNT_HASHAML_MIN = " 24,800 "
+        var CNT_HASHAML_MAX = " 102,292 "
+        var CNT_HASHAML_PETOR_1 = " 1,000 "
+        var CNT_HASHAML_PETOR_2 = " 2,000 "
+        var CNT_HASHAML_PETOR_3 = " 4,000 "
+        var CNT_HASHAML_PETOR_4 = " 5,000 "
+        var CNT_HASHAML_PETOR_5 = " 6,000 "
+        var CNT_ZIKUI_EILAT = " 246,840 ";
+        var CNT_HACNASA_AVODA = " 514,920 ";
+        var CNT_PEULOT_HEBA = " 628,800 ";
+
+
+
+        function ShowMilonMunachimFromHelp(MunachID) {
+            // debugger;
+            Dialog.showIframeDialog(CNT_MILON_MINAHIM + "#" + MunachID, 480, 300)
+            //showDialog("ActionDiv1", "frmCst1", CNT_MILON_MINAHIM + "#" + MunachID, true, true, 980, 600, 100, 100, 'מילון מונחים');
+
+        }
+
+
+
+        function ShowDaAtZecuyutech() {
+            document.location.href = CNT_DA_AT_ZECUYUTECH;
+        }
+
+        $(function () {
+            OnLoad();
+        });
+
+        function OnLoad() {
+            document.title = CNT_TITLE_HELP;
+            //debugger;
+            getObjectByName('ShantMas1').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas2').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas3').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas4').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas5').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas7').innerText = CNT_SHANTMAS;
+            //getObjectByName('ShantMas9').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas14').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas15').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas16').innerText = CNT_SHANTMAS;
+            getObjectByName('ShantMas17').innerText = CNT_SHANTMAS;
+            //getObjectByName('ShantMas18').innerText = CNT_SHANTMAS;
+            getObjectByName('Scum_Tiktra').innerText = CNT_SECUM_TIKRA;
+            getObjectByName('Scum_Tiktra1').innerText = CNT_SECUM_TIKRA1;
+            getObjectByName('Scum_Mizari1').innerText = CNT_SECUM_MIZARI;
+            getObjectByName('Scum_Mizari2').innerText = CNT_SECUM_MIZARI;
+            getObjectByName('Terumot_hetel1').innerText = CNT_TERUMOT_HETEL;
+            getObjectByName('Terumot_hetel2').innerText = CNT_TERUMOT_HETEL;
+            getObjectByName('Nekudat_Zicui_Shana1').innerText = CNT_NEKUDAT_ZICUI_SHANA;
+            getObjectByName('Nekudat_Zicui_Shana2').innerText = CNT_NEKUDAT_ZICUI_SHANA;
+            getObjectByName('Nekudat_Zicui_Hodesh1').innerText = CNT_NEKUDAT_ZICUI_HODESH;
+            getObjectByName('Secum_Zicui').innerText = CNT_SECUM_ZICUI;
+            getObjectByName('Secum_Zicui_Up1').innerText = CNT_SECUM_ZICUI_UP;
+            getObjectByName('Zicui_Teruma_Meyuhedet').innerText = CNT_SECUM_MIZARI;
+            getObjectByName('Zicui_Terumot').innerText = CNT_TERUMOT_HETEL;
+            getObjectByName('Zicui_Shoter').innerText = CNT_ZICUI_SHOTER;
+            getObjectByName('ZicuiForceMen1').innerText = CNT_FORCE_MAN_INCOME_ZICUI;
+            getObjectByName('ZicuiForceMen2').innerText = CNT_FORCE_MAN_INCOME_ZICUI;
+            getObjectByName('NicuiKerenEstalmut').innerText = CNT_NIKUI_KEREN_ESTALMUT
+            getObjectByName('netulMishp').innerText = CNT_NETULMISHP
+            getObjectByName('netul').innerText = CNT_NETUL
+            getObjectByName('netulMishp1').innerText = CNT_NETULMISHP
+            getObjectByName('netul1').innerText = CNT_NETUL
+            getObjectByName('netulMishp2').innerText = CNT_NETULMISHP
+            getObjectByName('netul2').innerText = CNT_NETUL
+            getObjectByName('kizba1').innerText = CNT_SECUM_KIZBA
+            getObjectByName('kizba2').innerText = CNT_SECUM_KIZBA
+            getObjectByName('tikra112').innerText = CNT_TIKRA_112_113
+            getObjectByName('tikra113').innerText = CNT_TIKRA_112_113
+            //getObjectByName('limudim').innerText = CNT_LASR_SHANTMAS
+            getObjectByName('Secum_No_Yegia').innerText = CNT_SECUM_NO_YEGIA
+            getObjectByName('Secum_Yegia').innerText = CNT_SECUM_YEGIA
+            getObjectByName('NechesHul').innerText = CNT_NECHES_HUL
+
+            getObjectByName('HashmalMax1').innerText = CNT_HASHAML_MAX
+            getObjectByName('HashmalMax2').innerText = CNT_HASHAML_MAX
+            getObjectByName('HashmalMax3').innerText = CNT_HASHAML_MAX
+            getObjectByName('HashmalMax4').innerText = CNT_HASHAML_MAX
+            getObjectByName('HashmalMin1').innerText = CNT_HASHAML_MIN
+            getObjectByName('HashmalMin2').innerText = CNT_HASHAML_MIN
+            getObjectByName('HashmalPetor1_1').innerText = CNT_HASHAML_PETOR_1
+            getObjectByName('HashmalPetor1_2').innerText = CNT_HASHAML_PETOR_1
+            getObjectByName('HashmalPetor1_3').innerText = CNT_HASHAML_PETOR_1
+            getObjectByName('HashmalPetor1_4').innerText = CNT_HASHAML_PETOR_1
+            getObjectByName('HashmalPetor2_1').innerText = CNT_HASHAML_PETOR_2
+            getObjectByName('HashmalPetor2_2').innerText = CNT_HASHAML_PETOR_2
+            getObjectByName('HashmalPetor3_1').innerText = CNT_HASHAML_PETOR_3
+            getObjectByName('HashmalPetor3_2').innerText = CNT_HASHAML_PETOR_3
+            getObjectByName('HashmalPetor3_3').innerText = CNT_HASHAML_PETOR_3
+            getObjectByName('HashmalPetor3_4').innerText = CNT_HASHAML_PETOR_3
+            getObjectByName('HashmalPetor4_1').innerText = CNT_HASHAML_PETOR_4
+            getObjectByName('HashmalPetor4_2').innerText = CNT_HASHAML_PETOR_4
+            getObjectByName('HashmalPetor4_3').innerText = CNT_HASHAML_PETOR_4
+            getObjectByName('HashmalPetor4_4').innerText = CNT_HASHAML_PETOR_4
+            getObjectByName('HashmalPetor4_5').innerText = CNT_HASHAML_PETOR_4
+            getObjectByName('HashmalPetor4_6').innerText = CNT_HASHAML_PETOR_4
+            getObjectByName('HashmalPetor5_1').innerText = CNT_HASHAML_PETOR_5
+            getObjectByName('HashmalPetor5_2').innerText = CNT_HASHAML_PETOR_5
+            getObjectByName('HashmalPetor5_3').innerText = CNT_HASHAML_PETOR_5
+            getObjectByName('HashmalPetor5_4').innerText = CNT_HASHAML_PETOR_5
+            getObjectByName('HashmalPetor5_5').innerText = CNT_HASHAML_PETOR_5
+            getObjectByName('HashmalPetor5_6').innerText = CNT_HASHAML_PETOR_5
+            getObjectByName('ZikuiEilat1').innerText = CNT_ZIKUI_EILAT
+            getObjectByName('ZikuiEilat2').innerText = CNT_ZIKUI_EILAT
+            getObjectByName('HacnasaAvoda1').innerText = CNT_HACNASA_AVODA
+            getObjectByName('HacnasaAvoda2').innerText = CNT_HACNASA_AVODA
+            getObjectByName('PeulotHeba').innerText = CNT_PEULOT_HEBA
+
+            setFocusToHelp();
+        }
+        function setFocusToHelp() {
+            window.status = "setFocusToHelp"
+            // debugger;
+            // console.log("3-setFocusToHelp")
+            var strHref = new String(location.hash)
+
+            sHref = strHref.replace('#', '');
+            GoToHref(sHref);
+        }
+        function OnUnLoad() {
+            if (MilonMunachimWin != null)
+                MilonMunachimWin.close();
+            MilonMunachimWin = null;
+        }
+    </script>
+
+
+    <form id="frmHesber">
+        &nbsp;
+			<table id="TableKotert" width="100%" bgcolor="#f4f9ff" border="0">
+                <tr>
+                    <td class="clsKotertRashi" id="mainHelp">דברי הסבר למילוי סימולטור לחישוב המס לשנת <span id="ShantMas1">aaaa</span>
+                    </td>
+
+                </tr>
+            </table>
+        <table id="TableHesber" cellspacing="1" cellpadding="1" width="100%" bgcolor="#f4f9ff"
+            border="0">
+            <tr>
+                <td class="clsKotertText">רשות המסים מעמידה לרשותכם כלי הדמיה לבדיקת האפשרות לקבלת
+						החזר מס עבור הכנסותיכם. הנתונים המוקלדים בסימולטור הם אנונימיים ואינם נשמרים
+						במחשב האגף. עם סיום השימוש במכשיר המוצע, נתונים אלה נמחקים.
+						<br>
+                    לידיעתכם, תוצאת החישוב מתבססת על נתונים שהוקלדו על ידכם ואינה מהווה התחייבות של
+						רשות המסים בישראל לחישוב המס.
+						<br>
+                    בעת הזנת הנתונים עליכם להביא בחשבון מגבלות הקבועות בחוק ובתקנות שאינן באות לידי
+						ביטוי במחשבון זה, אך עשויות לשנות את תוצאת החישוב.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">הסברים מפורטים על אופן מילוי סעיפי הדוח השנתי, זכויותיכם
+						וחובותיכם בנושאי מס הכנסה, ניתן למצוא בחוברת <a class="clsLinkText" href="javascript:ShowDaAtZecuyutech();">
+                            <u>"דע זכויותיך וחובותיך" </u></a>הנמצאת באתר האינטרנט של רשות המיסים. בנוסף
+						החוברת מוצעת לכל דורש חינם בכל משרדי השומה.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">בנוסף תוכלו לקבל מידע עדכני ולהוריד טפסים שבשימוש הרשות
+						באתר האינטרנט של רשות המסים שכתובתו: <a class="clsLinkText" href="http://WWW.MOF.GOV.IL/TAXES">
+                            <u>WWW.MOF.GOV.IL/TAXES</u></a></td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni">יש להדגיש כי הדברים המובאים כאן מוצגים באופן כללי ולשם
+						מידע בלבד, הוראות החוק הן המחייבות
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="MataraSimulator">מטרת הסימולטור
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">מטרתה של ההדמיה לסייע לאזרח בחישוב המס לשנת המס
+						הרלוונטית.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="LemiSimulator">למי מיועד הסימולטור</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סימולטור זה מיועד לנישומים יחידים שהם שכירים, ו/או לבעלי
+						הכנסות שאינן מעבודה כגון : שכר דירה, ריבית, דיבידנד, וכו'.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="NoSimulator">למי הסימולטור אינו מיועד</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לנישומים שלהם הכנסות מעסק או משלח יד, כגון עצמאים או
+						לבעלי שליטה בחברה (בעל שליטה : אדם המחזיק 10% ויותר מהזכויות בחברה)&nbsp;למי
+						שהיה לו שבח חייב או רווח הון.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לנישום שכיר המבקש פריסה לפי סעיף 8 (ג) לפקודת מס הכנסה
+						של פיצויים, חופשה, הפרשי שכר, וכיוצא באלה.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לבני זוג אשר לאחד מהם יש הכנסות מרכוש כגון : שכ"ד או
+						דיבידנד על מניות, שהתקבלו שנה לפני הנישואים או בירושה אף לאחר הנישואים.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לבני זוג אשר קיימת לגביהם תלות במקורות ההכנסה שלהם.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לתושב חוץ.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לתושב ישראל המחזיק נכס בחו"ל ששוויו מעל <span id="NechesHul">aaaaa</span> ₪.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לבעל הכנסה מנאמנות.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לבעל הכנסות מחו"ל.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- חבר קיבוץ.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni">המסמכים שיסייעו לכם במילוי הסימולטור :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- אישורים על הכנסות כולל הכנסות בן/בת הזוג מכל המקורות: <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                    <u>טופסי 106</u></a>  ממקומות העבודה (גם פנסיונר או עובד עבודה
+						חלקית) <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes837-857');">
+                            <u>וטופסי 837 / 857</u></a> בגין הכנסות ממשלמים אחרים.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- אישורים על קבלת ריבית מתוכניות חיסכון או מפיקדונות
+						אישור זה יינתן ע"י התאגיד הבנקאי שממנו התקבלה הריבית או הפיקדון ( <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes867');">
+                            <u>טופס 867</u></a> ).</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- אישורים על קבלת דיבידנד, ריבית, רווחים או הפסדים מני"ע
+						סחירים אישור זה יינתן ע"י התאגיד הבנקאי שממנו התקבלה הריבית, דיבידנד, רווחים או
+						הפסדים (טפסי 867 (א-ה)).</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- אישורים על דמי אבטלה, דמי פגיעה בעבודה ו/או תגמולי
+						מילואים מהמוסד לביטוח לאומי.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- אישורים על כל התשלומים לקופות גמל ולביטוח חיים.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- אישורים בגין בני משפחה נטולי יכולת.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- לפורש/ת מעבודה העתק מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes161');"><u>טופס
+								161</u></a> בדבר מענק פרישה מעבודה (פיצויים).</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">- ליולדת או לבעלה – אישור מהמוסד לביטוח לאומי על דמי לידה
+						או שמירת היריון.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">הסימולטור המוצע לפניכם מציג את חישוב המס כפי שהוא מתבצע
+						על ידי תכנית החישוב במחשב מס הכנסה. מילוי הנתונים בסימולטור זהה למילוי טופס
+						הדוח השנתי לשכירים.(טופס 135)
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">אנא מלאו את השדות בשלמותם, על כל סעיפיהם. מילוי חסר או
+						הקלדת נתונים שגויים עלולים לגרום לטעויות בחישוב המס. לדוגמה: מילוי שנת לידה -
+						אדם מעל גיל 60 זכאי להטבות מס ייחודיות (שיעורי מס מופחתים ). לפיכך קיימת חשיבות
+						לשלמות הנתונים על מנת לקבל את חישוב נכון של המס.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertRashi" id="HaderachaLeShadot">הסברים לשימוש בסימולטור ומילוי
+						השדות
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">בסימולטור יש למלא את הנתונים בשני טורים, טור המתייחס
+						לנתוני <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                            <u>בן הזוג הרשום</u></a> וטור שני המתייחס לנתוני בן / בת הזוג. ליד כל שדה
+						יש קוד ( בעל 3 ספרות ) שנועד לעזור במילוי הדו"ח. השדות בסימולטור זהים לשדות
+						בדו"ח אשר מיועד להגשה למס הכנסה. לאחר שאספתם את כל המסמכים הנדרשים למילוי
+						הסימולטור עליכם למלא את הסכומים ליד הקודים המתאימים. ברוב המקרים על גבי
+						האישורים אשר נמצאים ברשותכם מצוין בצד הסכומים מספר הקוד שאליו משתייך הסכום.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText"><strong>לדוגמא :</strong> ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> ליד הנתון של ההכנסות ממשכורת יופיעו הקודים 172/158 - עליכם
+						להעתיק את הנתונים לסימולטור בהתאם. אם <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                            <u>טופס 106</u></a> שייך ל "<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');"><u>בן
+								הזוג הרשום</u></a>" יש למלא הסכום בשדה ליד קוד 158, ואם הוא שייך לבן/בת
+						הזוג יש למלא הסכום בשדה 172.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText"><strong>שימו לב :</strong> אם קיימים מספר טפסים מאותו סוג
+						עליכם לסכם את הנתונים מהם ואת התוצאה להעתיק לסימולטור. לדוגמה אדם העובד בשני
+						מקומות עבודה, יקבל מכל מעביד <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                            <u>טופס 106</u></a>, בכל טופס ימצא קוד להכנסות 172/158. עליכם לסכם את
+						הסכומים הללו ולהעתיק את התוצאה לסימולטור תחת הקוד 172/158.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">ככלל, יהיה עליכם להקליד את החלק היחסי של ההכנסות השייכות
+						לשנת החישוב. כמו כן אם בידכם אישור פטור על הכנסות, אנא הקלידו את סכום ההכנסות
+						החייב במס, כלומר לאחר הפחתת הסכום הפטור.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">הסכומים המשודרים צריכים להיות חיוביים ( ללא סימן מינוס )
+						ושלמים ( ללא פסיקים ונקודות עשרוניות ).
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="PeratimIsiim">פרטים אישיים
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Mazav-Mish">מצב משפחתי :
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">מצב משפחתי בשנת המס : נשוי / אה, או יחיד הכולל : רווק/ה,
+						גרוש/ה, פרוד/ה, אלמן/ה.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Shenat-Lead">שנת לידה :
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש חשיבות למילוי שדה זה, משפיע במקרים מסוימים על חישוב
+						המס.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="HacnsaMeyegiaIshit">הכנסות חייבות לפני ניכויים
+						ולאחר הפטורים שהותרו לפי פקודת מס הכנסה</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni">.הכנסות חייבות <a href="javascript:ShowMilonMunachimFromHelp('HacnsaMeyegiaIshit');">
+                    <u>מיגיעה אישית</u></a> החייבות בשיעורי מס רגילים
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod150">קוד 150 :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סה"כ ההכנסות שאינן ממשכורת (כגון שכר סופרים, מרצים, שכר
+						דירקטורים או אומנים),השייכים ל<u>בן הזוג הרשום.</u> ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes837-857');"><u>טופסי
+								837 / 857</u></a> שקיבלתם, מפורט סכום התשלום ששולם לבן הזוג הרשום.
+						עליכם להעתיק את סכום התשלום לשדה ההכנסה. במידה וקיימים ברשותכם מספר אישורים של
+						בן הזוג הרשום, ממספר מנכים עליכם לסכם את סכומי התשלום מכל טופס.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">שימו לב – יש למלא בקודים אלה רק סוגי תשלומים המתאימים
+						לקוד זה.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod170">קוד 170 :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סה"כ ההכנסות שאינן ממשכורת (כגון שכר סופרים, מרצים, שכר
+						דירקטורים או אומנים), של בן הזוג(שאינו רשום) &nbsp;ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes837-857');"><u>טופסי
+								837 / 857</u></a> שקיבלתם מפורט סכום התשלום ששולם לבן הזוג (שאינו
+						רשום), עליכם להעתיק את סכום התשלום לשדה ההכנסה. במידה וקיימים ברשותכם מספר
+						אישורים של בן הזוג (שאינו רשום). ממספר מנכים עליכם לסכם את סכומי התשלום מכל
+						טופס.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">שימו לב – יש למלא בקודים אלה רק סוגי תשלומים המתאימים
+						לקוד זה.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod158">&nbsp;קוד 158- הכנסות ממשכורת ושכר עבודה :
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופסי
+								106</u></a> השייכים ל<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');"><u>בן
+								הזוג הרשום</u></a> את סך כל התשלומים החייבים במס (הסעיף בטופס 106 זהה
+						למספר הקוד) אם יש יותר ממעביד אחד יש לסכם את הנתון בקוד זה בכל טופסי 106, אם
+						באותו טופס 106 הקוד מצוין יותר מפעם אחת יש לסכם כל הסכומים באותו קוד.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod172">קוד 172- הכנסות ממשכורת ושכר עבודה :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> של בן הזוג (שאינו רשום) את סך כל התשלומים החייבים במס
+						(הסעיף בטופס 106 זהה למספר הקוד) אם יש יותר ממעביד אחד יש לסכם את הנתון בקוד זה
+						בכל טופסי 106, אם באותו טופס 106 הקוד מצוין יותר מפעם אחת יש לסכם כל הסכומים
+						באותו קוד.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod250">קוד 250- תקבולים והחזרים חייבי מס מהמוסד
+						לביטוח לאומי בגין הכנסתך כעצמאי שאינם נכללים בסעיף אחר :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">תקבולים החייבים במס השייכים לבן הזוג הרשום, ששולמו על ידי
+						הביטוח הלאומי בגין הכנסתך כעצמאי כגון: דמי אבטלה, דמי לידה, דמי שמירת הריון, שירות מילואים, דמי
+						פגיעה בעבודה (עפ"י האישורים מהמוסד לביטוח לאומי) ואשר אינם כלולים בטופס 106.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod270">קוד 270- תקבולים והחזרים חייבי מס מהמוסד
+						לביטוח לאומי בגין הכנסתך כעצמאי שאינם נכללים בסעיף אחר :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">תקבולים החייבים במס השייכים לבן הזוג (שאינו רשום), ששולמו
+						על ידי הביטוח הלאומי בגין הכנסתך כעצמאי כגון: דמי אבטלה, דמי לידה, דמי שמירת הריון, שירות מילואים,
+						דמי פגיעה בעבודה (עפ"י האישורים מהמוסד לביטוח לאומי) ואשר אינם כלולים בטופס
+						106.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod194">שדה 194 – תקבולים כשכיר חייבי מס מהמוסד
+						לביטוח לאומי של בן הזוג הרשום :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סכומים שקיבלת כשכיר מהמוסד לביטוח לאומי עקב שירות במילואים, דמי לידה, דמי
+						אבטלה, דמי פגיעה בעבודה, מענק אבטלה ממושכת, מענק חזרה לעבודה הם הכנסה חייבת במס. יש לרשום כאן בשדה 194 את הסכומים
+						שקיבלת מהמוסד לביטוח לאומי שלא באמצעות מעבידך. תשלומים הכלולים בטופס 106 ידווחו
+						בשדה 158. יש לצרף לדו''ח את האישורים השנתיים שהתקבלו מהמוסד לביטוח לאומי. הסבר
+						מפורט ניתן לראות בחוברת דע זכויותיך וחובותיך בסעיף 2ב בחלק ג בפרק ד.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod196">שדה 196 - תקבולים כשכיר חייבי מס מהמוסד
+						לביטוח לאומי של בן הזוג:</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סכומים שקיבלת כשכיר מהמוסד לביטוח לאומי עקב שירות
+						במילואים, דמי לידה, דמי אבטלה, דמי פגיעה בעבודה, מענק אבטלה ממושכת, מענק חזרה לעבודה הם הכנסה חייבת במס. יש לרשום
+						כאן בשדה 196 את הסכומים שקיבלת מהמוסד לביטוח לאומי שלא באמצעות מעבידך. תשלומים
+						הכלולים בטופס 106 ידווחו בשדה 172. יש לצרף לדו''ח את האישורים השנתיים שהתקבלו
+						מהמוסד לביטוח לאומי. הסבר מפורט ניתן לראות בחוברת דע זכויותיך וחובותיך בסעיף 2ב
+						בחלק ג בפרק ד
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod068">קוד 068- עבודה במשמרות בתעשייה :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> של <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                    <u>בן הזוג הרשום</u></a> את סך כל התשלומים עבור <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AvodaBeMishmarot');">
+                                        <u>עבודה במשמרות</u></a>. הנכם זכאים להנחה במס עבור הכנסה זו.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod069">קוד 069- עבודה במשמרות בתעשייה :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> של בן הזוג (שאינו רשום) את סך כל התשלומים עבור <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AvodaBeMishmarot');">
+                                    <u>עבודה במשמרות</u></a>. הנכם זכאים להנחה במס עבור הכנסה זו.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod258">קוד 258 :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">רשמו את הסכום החייב במס שקיבל <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                    <u>בן הזוג הרשום</u></a> ממענקי פרישה או מקצבאות מקופות גמל ממעבידים לשעבר
+						או קצבאות שאירים שאינן ממשרד הביטחון או מהמוסד לביטוח לאומי. במידה ומדובר
+						בקצבאות לפי סעיף 9א',9ב' לפקודת מס הכנסה יש למלא בקוד 101 את הקצבה הפטורה ממס.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סכומים אלה יש להעתיק <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes161');">
+                    <u>מטופס 161</u></a>.
+                    <br>
+
+                    סכומים של הכנסות מעבודה שהתקבלו לאחר פטירה ומענק פרישה עקב מוות המוגבל בשיעור מס של 40%.
+                    רשום בשדה זה רק במקרה וסך ההכנסות בשיעורי מס רגילים , לרבות הכנסה זו, הם עד-  <span id="HacnasaAvoda1">aaaaa</span> ₪.
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod272">קוד 272 :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">רשמו את הסכום החייב במס של בן הזוג (שאינו רשום) ממענקי
+						פרישה או מקצבאות מקופות גמל ממעבידים לשעבר או קצבאות שאירים שאינן ממשרד הביטחון
+						או מהמוסד לביטוח לאומי. במידה ומדובר בקצבאות לפי סעיף 9א',9ב' לפקודת מס הכנסה
+						יש למלא בקוד 102 את הקצבה הפטורה ממס.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סכומים אלה יש להעתיק <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes161');">
+                    <u>טופס 161</u></a>.
+                    <br>
+
+                    סכומים של הכנסות מעבודה שהתקבלו לאחר פטירה ומענק פרישה עקב מוות המוגבל בשיעור מס של 40%.
+                    רשום בשדה זה רק במקרה וסך ההכנסות בשיעורי מס רגילים , לרבות הכנסה זו, הם עד-  <span id="HacnasaAvoda2">aaaaa</span> ₪.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="HacnasotNosafotMerechosh">הכנסות חייבות נוספות
+						מרכוש</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">הכנסות מרכוש של בני זוג מצטרפות להכנסתו החייבת של בן הזוג
+						בעל ה<a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');"><u>הכנסה החייבת</u></a>
+                    הגבוהה ביותר <a href="javascript:ShowMilonMunachimFromHelp('HacnsaMeyegiaIshit');"><u>מיגיעה
+								אישית</u></a>.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="clsKotertMisheni" id="Kod213">קוד 213- משיכה שלא כדין מקופת גמל- מס בשיעור 35% :
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לרשום את הסכום החייב במס שקיבל בן הזוג הרשום מתשלומים לחבר בקופ"ג
+                    שהתקבלו בניגוד לתקנות אשר יחויבו במס בשיעור של לפחות 35% גם אם המקבל
+                     פטור במס או ששיעור המס על הכנסותיו נמוך מ 35%.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="clsKotertMisheni" id="Kod313">קוד 313- משיכה שלא כדין מקופת גמל- מס בשיעור 35%
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לרשום את הסכום החייב במס שקיבל בן הזוג (שאינו הרשום)
+                     מתשלומים לחבר בקופ"ג שהתקבלו בניגוד לתקנות אשר יחויבו במס
+                     בשיעור של לפחות 35% גם אם המקבל פטור במס או ששיעור המס על הכנסותיו נמוך מ 35%.
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td class="clsKotertMisheni" id="Kod059">קוד 059- הכנסות מנכס בית של שני בני הזוג :
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">ציינו את ההכנסה מהשכרה שלא למגורים, שכירות מוגנת ודמי
+						מפתח (לרבות מגורים) כמו כן את החלק החייב במס של הכנסה מהשכרת דירות ליחיד
+						למגורים בלבד. החלק החייב הוא החלק העולה על "התקרה המתואמת". לגבי אופן החישוב
+						ניתן לעיין בחוברת "דע זכויותיך וחובותיך" לשנת <span id="ShantMas4">aaaaa</span>.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">ניתן להשתמש באשף לשדה 059 לחץ על הלינק "עזרה"
+
+                                ליד שדה זה, לצורך ביצוע החישוב.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod167">שדה 167 - הכנסות אחרות שאינן מיגיעה אישית
+						:
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לציין את ההכנסות הנובעות מרכוש אחר (שאינו נכס בית),
+						כגון: הכנסות מקרן ריט, משותפות נפט, השכרת ציוד, ריבית ועוד.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <!--	<TR>
+					<TD class="clsKotertMisheni" id="Kod167">קוד 167- הכנסות אחרות שאינן מיגיעה אישית :</TD>
+				</TR>
+				<TR>
+					<TD class="clsKotertText">ציינו את ההכנסות של שני בני הזוג הנובעות מרכוש אחר (שאינו
+						נכס בית), כגון: השכרת ציוד, ריבית.
+					</TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>-->
+            <tr>
+                <td class="clsKotertMisheni" id="Kod060">קוד 060 - ריבית על ניירות ערך, רווחים
+						מקופ"ג ודיבידנד ממפעל מאושר/מוטב בשיעור של 15%</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לרשום בשדה זה את ההכנסות הבאות:<br>
+                    * ריבית מניירות ערך החייבת במס בשיעור של 15%, שאיננה ריבית על פקדונות בתאגיד
+						בנקאי ותוכניות חסכון. יש להעתיק מטופסי 867 ג את הסכומים החייבים במס בשיעור 15%.<br>
+                    * ריבית ורווחים (מעל עליית המדד) בעת משיכה מקופת גמל לתגמולים, בשל תשלומים
+						שהופקדו בקופה מיום 1.1.2003 ועד 31.12.2005, , ימוסו בשיעור של 15%.<br>
+                    * דיבידנד המתקבל ממפעל מאושר וכן דיבידנד המתקבל מתוך הכנסה מוטבת עפ"י חוק
+						לעידוד השקעות הון, החייב במס בשיעור של 15% בלבד. בני זוג נשואים, ירשמו את
+						ההכנסה בשדה 060.<br>
+                    הסבר מפורט יותר ניתן לראות בחוברת דע זכויותיך וחובותיך בסעיף&nbsp;14
+						בחלק&nbsp;ה בפרק ד.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod067">קוד 067 - ריבית על ניירות ערך, ריבית
+						מקופות גמל - מס שלא יעלה על 20%
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לרשום בשדה זה את ההכנסות הבאות:
+						<br>
+                    * ריבית מניירות ערך החייבת במס בשיעור של 20%, שאיננה ריבית על פקדונות בתאגיד
+						בנקאי ותוכניות חסכון. יש להעתיק מטופסי 867 ג את הסכומים החייבים במס בשיעור שלא
+						יעלה על 20%.<br>
+                    * ריבית ורווחים (מעל עליית המדד שנצמחו עד ליום 31.12.2011) בעת משיכה מקופת גמל
+						לתגמולים, בשל תשלומים שהופקדו בקופה מיום 1.1.06 , ימוסו בשיעור שלא
+						יעלה על 20%. בני זוג נשואים, ירשמו את ההכנסה מריבית בשדה 067.<br>
+                    הסבר מפורט יותר ניתן לראות בחוברת דע זכויותיך וחובותיך בסעיף 15 בחלק ה בפרק ד.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod157">קוד 157 - ריבית על ניירות ערך, ריבית
+						מקופות גמל - מס שלא יעלה על 25%
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לרשום בשדה זה את ההכנסות הבאות:
+						<br>
+                    * ריבית מניירות ערך החייבת במס בשיעור של 25%, שאיננה ריבית על פקדונות בתאגיד
+						בנקאי ותוכניות חסכון. יש להעתיק מטופסי 867 ג את הסכומים החייבים במס בשיעור שלא
+						יעלה על 25%.<br>
+                    * ריבית ורווחים (מעל עליית המדד שנצמחו החל מיום 1.1.2012) בעת משיכה מקופת גמל
+						לתגמולים, בשל תשלומים שהופקדו בקופה מיום 1.1.06 , ימוסו בשיעור שלא יעלה על 25%.
+						בני זוג נשואים, ירשמו את ההכנסה מריבית בשדה 157.<br>
+                    הסבר מפורט יותר ניתן לראות בחוברת דע זכויותיך וחובותיך בסעיף 16 בחלק ה בפרק ד.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod141">קוד 141 - דיבידנד ורווח ממניות הניתנות
+						לפידיון (החלק החייב בשיעור זה)- מס בשיעור של 25%</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">דיבידנד המתקבל מחברה, חייב במס בשיעור של 25%. בני זוג
+						נשואים, ירשמו את ההכנסה דיבידנד בשדה 141.
+						<br>
+                    הסבר מפורט יותר ניתן לראות בחוברת דע זכויותיך וחובותיך בסעיף 18 בחלק ה בפרק ד.
+						<br>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod050">קוד 050 - ריבית על ניירות ערך
+                    ומניות הניתנות לפדיון (החלק החייב בשיעור זה)- מס בשיעור של 35%.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לרשום בשדה זה את ההכנסות הבאות:
+						<br>
+                    * ריבית המשתלמת על ניירות ערך שהיו ניירות ערך זרים ושצמחה עד תום שנת המס 2005,
+						תחוייב במס בשיעור של 35%, ניתן למצוא נתון זה בטופס 867 ג.
+						<br>
+                    * החלק החייב של מניות הניתנות לפידיון. בני זוג נשואים, ירשמו את ההכנסה בשדה
+						050.<br>
+                    הסבר מפורט יותר ניתן לראות בחוברת דע זכויותיך וחובותיך בסעיף 21 בחלק&nbsp;ה
+						בפרק ד.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod078">קוד- 078 הכנסה מריבית על פיקדונות ותוכניות
+						חיסכון – מס בשיעור של 15% :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">ציינו את ההכנסות מריבית על פיקדונות ותוכניות חיסכון שאינם
+						צמודים למדד שהתקבלו&nbsp;בשנת המס בידי שני בני הזוג וילדיהם עד גיל 18.בשדה זה
+						יש להוסיף את&nbsp;ההכנסה מריבית ריאלית, מפיקדונות ותוכניות חסכון צמודות למדד.
+						בשדה זה יש להוסיף את כל&nbsp;ההכנסה שהתקבלה מריבית על פיקדון ותוכניות חיסכון
+						(לפני הפטורים מכח <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Seif125');">סעיף 125 (ד) ו- (ה)</a> )של בני הזוג וילדיהם. ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes867');"><u>טופסי
+								867</u></a> שקיבלתם מפורט סכום התשלום ששולם לכם, החייב בשיעור מס זה.
+						עליכם להעתיק את סכום התשלום לשדה ההכנסה. במידה וקיימים ברשותכם מספר אישורים
+						כאלה ממספר מנכים עליכם לסכם את סכומי התשלום מכל הטפסים.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סכומים אלו יש להעתיק מטופס 867 מהשורה המתאימה לקוד זה.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">במידה ומגיעים לך פטורים מריבית כגון : פטור בשל גיל, מיעוט
+						הכנסות, או ריבית מזכה. יש למלא את ההכנסות מריבית לפני קיזוז פטורים אלה. בעת
+						חישוב המס ילקחו פטורים אלה בחשבון באופן אוטומטי.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod126">קוד- 126 הכנסה מריבית על פיקדונות ותוכניות
+						חיסכון – מס בשיעור של 20% :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">ציינו את ההכנסות מריבית ריאלית (שנצמחה עד ליום
+						31.12.2011) בגין פיקדונות ותוכניות חיסכון שאינם צמודים למדד שהתקבלו בשנת המס
+						בידי שני בני הזוג וילדיהם עד גיל 18. בשדה זה יש להוסיף את ההכנסה (לפי הפטורים
+						מכח <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Seif125');">סעיף
+							125 (ד) ו- (ה)</a> )שהתקבלה מריבית על פיקדון ותוכניות חיסכון ללא ההכנסה
+						הנובעת מהפרשי מדד(הכנסה ריאלית). של בני הזוג וילדיהם. ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes867');"><u>טופסי
+								867</u></a> שקיבלתם מפורט סכום התשלום ששולם לכם, החייב בשיעור מס זה.
+						עליכם להעתיק את סכום התשלום לשדה ההכנסה. במידה וקיימים ברשותכם מספר אישורים
+						כאלה ממספר מנכים עליכם לסכם את סכומי התשלום מכל הטפסים.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סכומים אלו יש להעתיק מטופס 867 מהשורה המתאימה לקוד זה.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">במידה ומגיעים לך פטורים מריבית כגון : פטור בשל גיל, מיעוט
+						הכנסות, או ריבית מזכה. יש למלא את ההכנסות מריבית לפני קיזוז פטורים אלה. בעת
+						חישוב המס ילקחו פטורים אלה בחשבון באופן אוטומטי.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod142">קוד- 142 הכנסה מריבית על פיקדונות ותוכניות
+						חיסכון – מס בשיעור של 25% :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">ציינו את ההכנסות מריבית ריאלית (שנצמחה החל מיום 1.1.2012)
+						בגין פיקדונות ותוכניות חיסכון שאינם צמודים למדד שהתקבלו בשנת המס בידי שני בני
+						הזוג וילדיהם עד גיל 18. בשדה זה יש להוסיף את ההכנסה (לפי הפטורים מכח <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Seif125');">סעיף 125 (ד) ו- (ה)</a> )שהתקבלה מריבית על פיקדון ותוכניות חיסכון ללא
+						ההכנסה הנובעת מהפרשי מדד(הכנסה ריאלית). של בני הזוג וילדיהם. <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes867');">
+                            <u>מטופסי 867</u></a> שקיבלתם מפורט סכום התשלום ששולם לכם, החייב בשיעור מס
+						זה. עליכם להעתיק את סכום התשלום לשדה ההכנסה. במידה וקיימים ברשותכם מספר אישורים
+						כאלה ממספר מנכים עליכם לסכם את סכומי התשלום מכל הטפסים.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">סכומים אלו יש להעתיק מטופס 867 מהשורה המתאימה לקוד זה.
+                </td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">במידה ומגיעים לך פטורים מריבית כגון : פטור בשל גיל, מיעוט
+						הכנסות, או ריבית מזכה. יש למלא את ההכנסות מריבית לפני קיזוז פטורים אלה. בעת
+						חישוב המס ילקחו פטורים אלה בחשבון באופן אוטומטי.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod222">קוד 222 הכנסה משכר דירה למגורים/חוק
+						אנרגיות מתחדשות – מס בשיעור של 10% :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">אם הייתה לך בשנת המס הכנסה מדמי שכירות מהשכרת דירה
+						למגורים תוכל לשלם מס בשיעור של 10% על ההכנסה, יש לשלם לפקיד השומה את מקדמת המס
+						מהכנסה זו תוך 30 יום מתום שנת המס. במקרה של תשלום המס במועד מאוחר יותר יוטלו על סכום המס הפרשי הצמדה וריבית.  במידה וחלופה זו נבחרה על ידך, עליך למלא בקוד
+						זה את ההכנסות משכר הדירה שהתקבלו.
+						<br>
+                    הכנסה בשיעור מס סופי של 10% כולל גם הכנסות מייצור אנרגיה מתחדשת ו/או מהשכרה
+						למתקן אנרגיה מתחדשת. הכנסה ממכירת חשמל שהופק באמצעות מתקן להפקת חשמל מאנרגיה
+						מתחדשת: עד סכום של <span id="HashmalMin1">aaaaa</span> ₪ לשנה – פטור ממס וישודר
+						בחלק י' הכנסות ורווחים פטורים. סכום מעל <span id="HashmalMin2">aaaaa</span> ₪
+						ועד <span id="HashmalMax1">aaaaa</span> ₪ יחויב ב-10% מס מהשקל הראשון וישודר
+						בשדה זה. התקרה שנקבעה היא גובה מחזור עוסק פטור במע"מ (<span id="HashmalMax4">aaaaa</span>
+                    ₪) – נועד ליצירת אחידות עם מע"מ. הכנסה מעל <span id="HashmalMax3">aaaaa</span> ₪
+						- נשמרת הטבת המס עד <span id="HashmalMax2">aaaaa</span> ₪ וכל שקל הכנסה מעל
+						סכום זה ימוסה בהתאם לשיעור המס השולי של היחיד וישודר בשדה 167 הכנסות אחרות
+						שאינן מיגיעה אישית. יש להמציא אישור שנתי מחברת החשמל. הכנסה מהשכרת מקרקעין
+						המשמשים להפקת חשמל מאנרגיה מתחדשת – עד סכום של <span id="HashmalPetor4_3">aaaaa</span>
+                    ₪ לשנה – פטור ממס וישודר בחלק י' הכנסות ורווחים פטורים. מעבר לסכום זה יחול
+						"פטור מתקפל" כאשר על החלק החייב במס יחול מס סופי בשיעור קבוע של 31% אשר ישודר
+						בשדה 227 להלן. לדוגמה, הכנסתך מהשכרת מקרקעין כאמור הינה בסך <span id="HashmalPetor5_3">aaaaa</span> ₪ בשנה הפגיעה בפטור היא <span id="HashmalPetor1_1">aaaaa</span>
+                    (<span id="HashmalPetor4_1">aaaaa</span> – <span id="HashmalPetor5_1">aaaaaa</span>)
+						ולכן הפטור עומד על <span id="HashmalPetor3_1">aaaaa</span> (<span id="HashmalPetor1_2">aaaaa</span>
+                    – <span id="HashmalPetor4_2">aaaaa</span>) . ההכנסה החייבת בשיעור 31% הנה <span id="HashmalPetor2_1">aaaaa</span> ( <span id="HashmalPetor3_2">aaaaa</span> – <span id="HashmalPetor5_2">aaaaaa</span>). קיים גם מסלול נוסף של מס בשיעור של 10% מהשקל הראשון בדומה
+						למיסוי דירת מגורים והסכום ישודר בשדה זה.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod227">קוד- 227 הכנסה מהימורים, הגרלות ופרסים :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">רשמו את החלק החייב במס של הכנסה מהימורים, הגרלות ופרסים.
+						החלק החייב הוא החלק העולה על "התקרה המתואמת". לגבי אופן החישוב ניתן לעיין
+						בחוברת "דע זכויותיך וחובותיך" לשנת <span id="ShantMas7">aaaaa</span>.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש להשתמש באשף לשדה 227, לחץ על הלינק "עזרה"
+                                &nbsp;ליד
+						שדה זה, לצורך ביצוע החישוב.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod335">קוד 335 הכנסה בהתאם לחוק אנרגיות מתחדשות – מס בשיעור של 31% :</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">במקרה והנך משכיר מקרקעין המשמשים להפקת חשמל מאנרגיה מתחדשת, עד סכום של <span id="HashmalPetor4_4">aaaaa</span> ₪ לשנה – פטור ממס ויש לשדר את הסכום בחלק הכנסות ורווחים
+						פטורים. מעבר לסכום זה יחול "פטור מתקפל" כאשר על החלק החייב במס יחול מס סופי
+						בשיעור קבוע של 31% אשר ישודר בשדה זה. לדוגמה, הכנסתך מהשכרת מקרקעין כאמור הינה
+						בסך <span id="HashmalPetor5_5">aaaaa</span> ₪ בשנה, הפגיעה בפטור היא <span id="HashmalPetor1_3">aaaaa</span> (<span id="HashmalPetor4_6">aaaaa</span> – <span id="HashmalPetor5_6">aaaaa</span>) ולכן הפטור עומד על <span id="HashmalPetor3_4">aaaaa</span> (<span id="HashmalPetor1_4">aaaaa</span>
+                    – <span id="HashmalPetor4_5">aaaaa</span>) . ההכנסה החייבת בשיעור 31% הנה <span id="HashmalPetor2_2">aaaaa</span> (<span id="HashmalPetor3_3">aaaaa</span> – <span id="HashmalPetor5_4">aaaaa</span> ). קיים גם מסלול נוסף של מס בשיעור של 10% מהשקל הראשון בדומה
+						למיסוי דירת מגורים כאמור&nbsp;בשדה 222 כאמור לעיל.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod109">קוד 109, 309 - הכנסות פטורות ממס לפי סעיף
+						9 (5) נכה 100%</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">יש לרשום הכנסות פטורות ממס של נכה 100% או בעל תעודת
+						עיוור. תקרת הפטור להכנסות מיגיעה אישית היא <span id="Secum_Yegia">aaaaa</span> ש"ח ולמקבל גמלה ממשרד הביטחון/פעולות איבה  <span id="PeulotHeba">aaaaa</span>
+						תקרת הפטור להכנסות שאינן מיגיעה אישית בלבד (כגון: שכ"ד, ריבית, פנסיה שלא ממעביד
+						או מקופ"ג) היא <span id="Secum_No_Yegia">aaaaa</span> ש"ח. עליך לצרף לדו"ח את
+						אישור פקיד השומה. ראה פירוט על זכאותך בחוברת "דע את זכויותיך וחובותיך" ובלוח
+						עזר לחישוב מס הכנסה לשנת <span id="ShantMas17">aaaaa</span> , לגבי אישורים
+						לתקופת נכות הפחותה משנה או המתייחסת לחלק משנת המס.
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod209">קוד 209 – סה"כ הכנסות / רווחים פטורים
+						ובלתי חייבים במס</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">רשמו את סה"כ ההכנסות הפטורות והבלתי חייבות במס שהתקבלו
+						בידי בני הזוג בשנת המס.</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">שימו לב – עליכם למלא את השדות בשלמותם לצורך חישוב נכון של
+						מס.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsKotertMisheni" id="Kod101">קוד 101 – הכנסות פטורות מקצבאות לפי סעיפים
+						9א', 9ב' לפקודת מס הכנסה</td>
+            </tr>
+            <tr>
+                <td class="clsKotertText">רשמו את הסכום הפטור ממס שקיבל בן הזוג הרשום ממענקי פרישה או מקצבאות מקופות גמל
+					ממעבידים לשעבר או קצבאות שאירים שאינן ממשרד הביטחון או מהמוסד לביטוח לאומי.
+					<td></td>
+                    <tr>
+                        <td class="clsKotertText">סכומים אלה יש להעתיק <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes161');">
+                            <u>מטופס 161</u></a> / <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                                <u>טופס 106</u></a>.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="clsKotertMisheni" id="Kod102">קוד 102 – הכנסות פטורות מקצבאות לפי סעיפים
+						9א', 9ב' לפקודת מס הכנסה</td>
+                    </tr>
+                    <tr>
+                        <td class="clsKotertText">רשמו את הסכום הפטור ממס שקיבל בן הזוג (שאינו הרשום) ממענקי פרישה או מקצבאות
+					מקופות גמל ממעבידים לשעבר או קצבאות שאירים שאינן ממשרד הביטחון או מהמוסד לביטוח
+					לאומי.
+					<td></td>
+                            <tr>
+                                <td class="clsKotertText">סכומים אלה יש להעתיק <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes161');">
+                                    <u>מטופס 161</u></a> /<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a>.</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertMisheni" id="netunimNosafim">נתונים נוספים - רווח הון מניירות
+						ערך סחירים :</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertMisheni" id="Kod054">קוד 054:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertText">יש לרשום את מספר טפסי רווח ההון שצורפו. לרוב יש לרשום
+						טופס 1 שהוא נספח ג' טופס 1322. במקרה שיש לך רווחי הון אחרים או עסקת שבח חייבת,
+						עליך למלא טופס 1301 (דוח שנתי) ולא את טופס 0135 (דוח שנתי מקוצר)</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertMisheni" id="Kod256">קוד 256:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertText">יש לרשום את סכום המכירות הרווח הון מניירות ערך סחירים.
+						סכום זה ילקח מקוד 56 הנמצא בנספח ג' - רווח הון מני"ע סחירים.</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertMisheni" id="Kod166">קוד 166:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertText">יש לרשום את סכום הפסדי ההון מניירות ערך סחירים שלא קוזזו
+						(ללא הפסדי הון מחו"ל). סכום יתרת ההפסדים יועבר לקיזוז לשנים הבאות.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertMisheni" id="NikuimIshiim">ניכויים אישיים :</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertMisheni" id="Kod112">קוד 112 - לביטוח בפני אובדן כושר עבודה
+						עבור בן הזוג הרשום
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="clsKotertText">אם רכשת ביטוח בפני אובדן כושר עבודה והביטוח הוא "<a href="javascript:ShowMilonMunachimFromHelp('BituchMuadaf');"><u>ביטוח
+								מועדף </u></a>" וההכנסה שלגביה נרכש הביטוח היא הכנסה מעסק או ממשלח יד
+						או שהיא הכנסת עבודה, יותר ניכוי בשל הוצאה לרכישת הביטוח בסכום של עד 3.5% מאותה
+						הכנסה שהיא הכנסה חייבת עד לתקרה של <span id="tikra112">aaaaa</span>₪ ולא יותר
+						מהסכום ששולם.
+						<br>
+                                    לגבי שכיר אשר בשל הכנסתו ממשכורת, מעבידו הפריש עבורו לקופת גמל, על חשבון מרכיב
+						תגמולי המעביד, סכום בשיעור העולה על 4% ממשכורתו של העובד יופחת משיעור ה- 3.5%
+						ההפרש בין השיעור ששילם המעביד כאמור, לבין 4%. אם הפרשות המעביד לקופת גמל כאמור
+						לעיל עולות על 7.5% מהמשכורת, לא תהיה זכאות כלל לניכוי בשל תשלומים לרכישת ביטוח
+						בשל אבדן כושר עבודה.
+						<br>
+                                    כדי לחשב את סכום ההוצאה המותר בניכוי יש להשתמש באשף לשדה 112, כדי להיכנס לאשף
+						לחץ על הלינק
+                                               "עזרה".&nbsp;
+						<br>
+                                    לגבי אופן החישוב ניתן לעיין בחוברת "דע זכויותך וחובותיך" לשנת <span id="ShantMas15">aaaaa</span>
+                                    .
+					<td></td>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod113">קוד 113 - לביטוח בפני אובדן כושר עבודה
+						עבור בן/בת הזוג (שאינו הרשום)&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">אם בן הזוג (שאינו הרשום) רכש ביטוח בפני אובדן כושר עבודה
+						והביטוח הוא "<a href="javascript:ShowMilonMunachimFromHelp('BituchMuadaf');"><u>ביטוח
+								מועדף </u></a>" וההכנסה שלגביה נרכש הביטוח היא הכנסה מעסק או ממשלח יד
+						או שהיא הכנסת עבודה, יותר ניכוי בשל הוצאה לרכישת הביטוח בסכום של עד 3.5% מאותה
+						הכנסה שהיא הכנסה חייבת עד לתקרה של <span id="tikra113">aaaaa</span>₪ ולא יותר
+						מהסכום ששולם.
+						<br>
+                                            לגבי שכיר אשר בשל הכנסתו ממשכורת, מעבידו הפריש עבורו לקופת גמל, על חשבון מרכיב
+						תגמולי המעביד, סכום בשיעור העולה על 4% ממשכורתו של העובד יופחת משיעור ה- 3.5%
+						ההפרש בין השיעור ששילם המעביד כאמור, לבין 4%. אם הפרשות המעביד לקופת גמל כאמור
+						לעיל עולות על 7.5% מהמשכורת, לא תהיה זכאות כלל לניכוי בשל תשלומים לרכישת ביטוח
+						בשל אבדן כושר עבודה.
+						<br>
+                                            כדי לחשב את סכום ההוצאה המותר בניכוי יש להשתמש באשף לשדה 112, כדי להיכנס לאשף
+						לחץ על הלינק "עזרה"
+                                                       .&nbsp;
+						<br>
+                                            לגבי אופן החישוב ניתן לעיין בחוברת "דע זכויותך וחובותיך" לשנת <span id="ShantMas16">aaaaa</span>
+                                            .
+					<td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">ניכויים אישיים הם סכומים המופחתים מההכנסה לצורך קביעת ה<a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');"><u>הכנסה
+								החייבת</u></a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod206">קוד 206, 207 - ניכוי בשל אובדן כושר עבודה
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">אם הינך שכיר שדורש ניכוי בשל אובדן כושר עבודה עליך לרשום
+						בשדה זה את סכום ההוצאה המותרת כפי שחושב בטופס 134, ולצרף את הטופס. (בן הזוג
+						הרשום בשדה 206 ובן/בת הזוג בשדה 207</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod135">קוד 135– תשלומים לקופת גמל לקיצבה כ"עמית
+						עצמאי":</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">תשלומים ששולמו לקופת גמל לקיצבה כ"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AmitAzmai');"><u>עמית
+								עצמאי</u></a>" ומיוחסים ל<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');"><u>בן
+								הזוג הרשום</u></a>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הניכוי יחושב עבור הפקדותיו של יחיד&nbsp;לקופת
+						גמל&nbsp;לקצבה.&nbsp; כ"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AmitAzmai');"><u>עמית
+								עצמאי</u></a>" – (מי ששילם לקופ"ג ללא השתתפות מעביד).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">יש לרשום את הסכומים ששולמו לפי האישורים השנתיים שמתקבלים
+						מהקופות, ( הסכומים מופיעים תחת הקודים הנ"ל ).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">לתשומת לבכם :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">תשלומים לקופות גמל, ששולמו על ידי אחד מבני הזוג, ניתן
+						לייחס לאחד משני בני הזוג או לפצל ביניהם.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">"עמית מוטב"&nbsp;(מי ששולמו בעדו בשנת המס סכומים לקופת
+						גמל לקיצבה סכום העולה על <span id="kizba1">aaaaa</span> ₪) יכול להשתמש בהפקדות
+						כאמור גם אם שולמו עבור ילדיו שמלאו להם 18.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">לגבי יחיד שאינו "עמית מוטב" תשלומים לקופות גמל, ששולמו על
+						ידי אחד מבני הזוג, ניתן לייחס לאחד משני בני הזוג או לפצל ביניהם. יש לוודא
+						שהעברה בין בני הזוג אינה משנה את מעמדו של מי מבני הזוג ואינה מסווגת אותו כ"עמית
+						מוטב", כיוון שאצל "עמית מוטב" לא ניתן להעביר סכומים בין בני זוג.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">יחיד המבקש ניכוי עבור הפקדות לקופות גמל בגין תשלומים
+						שנעשו לקופת גמל על שם בן זוגו או ילד כאמור, כ"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AmitAzmai');"><u>עמית
+								עצמאי</u></a>" יוכל לדרוש את הניכוי רק אם זה שעל שמו שולם הסכום אינו
+						דורש את הניכוי. פירוט ראה בחוברת דע את זכויותך.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod180">קוד 180- תשלומים לקופת גמל לקיצבה כ"עמית
+						עצמאי":</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">תשלומים ששולמו לקופת גמל לקיצבה כ"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AmitAzmai');"><u>עמית
+								עצמאי</u></a>" ומיוחסים לבן הזוג (שאינו הרשום).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הניכוי יחושב עבור הפקדותיו של יחיד&nbsp;לקופת
+						גמל&nbsp;לקצבה.&nbsp; כ"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AmitAzmai');"><u>עמית
+								עצמאי</u></a>" – (מי ששילם לקופ"ג ללא השתתפות מעביד).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">יש לרשום את הסכומים ששולמו לפי האישורים השנתיים שמתקבלים
+						מהקופות, ( הסכומים מופיעים תחת הקודים הנ"ל ).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">לתשומת לבכם :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">תשלומים לקופות גמל, ששולמו על ידי אחד מבני הזוג, ניתן
+						לייחס לאחד משני בני הזוג או לפצל ביניהם.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">"עמית מוטב"&nbsp;(מי ששולמו בעדו בשנת המס סכומים לקופת
+						גמל לקיצבה סכום העולה על <span id="kizba2">aaaaa</span> ₪) יכול להשתמש בהפקדות
+						כאמור גם אם שולמו עבור ילדיו שמלאו להם 18.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">לגבי יחיד שאינו "עמית מוטב" תשלומים לקופות גמל, ששולמו על
+						ידי אחד מבני הזוג, ניתן לייחס לאחד משני בני הזוג או לפצל ביניהם. יש לוודא
+						שהעברה בין בני הזוג אינה משנה את מעמדו של מי מבני הזוג ואינה מסווגת אותו כ"עמית
+						מוטב", כיוון שאצל "עמית מוטב" לא ניתן להעביר סכומים בין בני זוג.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">יחיד המבקש ניכוי עבור הפקדות לקופות גמל בגין תשלומים
+						שנעשו לקופת גמל על שם בן זוגו או ילד כאמור, כ"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AmitAzmai');"><u>עמית
+								עצמאי</u></a>" יוכל לדרוש את הניכוי רק אם זה שעל שמו שולם הסכום אינו
+						דורש את הניכוי. פירוט ראה בחוברת דע את זכויותך.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod030">קוד 030 :</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">רשמו רק תשלומים עבור דמי ביטוח לאומי ששילם <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                            <u>בן הזוג הרשום</u></a> כעצמאי (עפ"י האישור השנתי מהמוסד לביטוח לאומי).
+						אין לכלול סכומים ששולמו לביטוח לאומי עבור קנסות, הפרשי הצמדה או ריבית פיגורים
+						וכן תשלומים עבור מס בריאות.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod089">קוד 089 :</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">רשמו רק תשלומים עבור דמי ביטוח לאומי ששילם בן הזוג (שאינו
+						הרשום) כעצמאי&nbsp;&nbsp;(עפ"י האישור השנתי מהמוסד לביטוח לאומי). אין לכלול
+						סכומים ששולמו לביטוח לאומי עבור קנסות, הפרשי הצמדה או ריבית פיגורים וכן תשלומים
+						עבור מס בריאות.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod117-116">קודים 117,116- ניכוי בגין יחידות
+						השתתפות בשותפות לחיפוש נפט :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">ציינו את הניכוי המגיע בגין השקעה בחיפוש נפט. עפ"י <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes858');">
+                                            <u>טופס 858</u></a> ועפ"י האישור שהתקבל על ההשקעה. ראו הסבר מפורט בחוברת
+						"דע זכויותיך וחובותיך".
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod244">קוד 244 - הכנסה מבוטחת - בן הזוג הרשום</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הכנסה מבוטחת - היא הכנסת עבודה שבשלה שילם מעבידך סכומים
+						לקופת גמל לתגמולים או קופת גמל לקצבה וכן הכנסת עבודה בשלה הינך זכאי לפנסיה
+						תקציבית -&nbsp;לקצבה על פי דין או חוזה רשום בסעיף זה את הסכום כפי שמופיע בקוד
+						244 ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                            <u>טופס 106</u></a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הכנסה מבוטחת נדרשת לצורך חישוב סכום ניכוי/זיכוי המגיע לך
+						בשל תשלומים לקופת גמל.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod245">קוד 245 - הכנסה מבוטחת - בן/בת הזוג (שאינו
+						רשום)&nbsp;&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הכנסה מבוטחת - היא הכנסת עבודה שבשלה שילם מעבידך סכומים
+						לקופת גמל לתגמולים או קופת גמל לקצבה וכן הכנסת עבודה בשלה הינך זכאי לקצבה על פי
+						דין או חוזה רשום בסעיף זה את הסכום כפי שמופיע בקוד 245 ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                            <u>טופס 106</u></a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הכנסה מבוטחת נדרשת לצורך חישוב סכום ניכוי/זיכוי המגיע לך
+						בשל תשלומים לקופת גמל.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod248">קוד 248 - הפקדות המעביד לקופת גמל לקצבה
+						והפקדות העובד - בן הזוג הרשום</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">בשדה זה יש לרשום את הפרשות המעביד לקופת גמל לקצבה לרבות
+						הפקדות המעביד למרכיב הפיצויים, וכן הפקדותיך להכנסות יסוד כ"עמית שכיר".
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">רשום בסעיף זה אם הסכום כפי שמופיע ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                                            <u>טופס 106</u></a> (248).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod249">קוד 249 - הפקדות המעביד לקופת גמל לקצבה
+						והפקדות העובד - בן/בת הזוג (שאינו רשום)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">בשדה זה יש לרשום את הפרשות המעביד לקופת גמל לקצבה לרבות
+						הפקדות המעביד למרכיב הפיצויים, וכן הפקדותיך להכנסות יסוד כ"עמית שכיר".
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">רשום בסעיף זה אם הסכום כפי שמופיע ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                                            <u>טופס 106</u></a> (249).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="NekudotZicui">נקודות זיכוי</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">נקודת זיכוי היא סכום המופחת מהמס- הנחת מס. מצבכם האישי
+						קובע את מספר נקודות המגיעות לכל אחד. שוויה של נקודת זיכוי בשנת המס <span id="ShantMas5">aaaaa</span>הוא <span id="Nekudat_Zicui_Shana1">aaaaa</span>₪. הזיכוי
+						שיינתן יהיה סכום המכפלה של מספר נקודות הזיכוי בשווי של נקודת זיכוי אחת. יש לצרף
+						אישורים לפי העניין.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod020">קוד 020 – זיכוי במס בגין תושבות :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">קוד זה מסומן אוטומטית.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod021">קוד 021 – זיכויים בעד בן / בת זוג :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">קוד זה מסומן אוטומטית במצב משפחתי נשוי.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod028">קוד 028 – זיכוי בעד תשלום דמי מזונות :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">סימון שדה זה מקנה נקודת זיכוי לגרוש שנישא בשנית ומשלם
+						מזונות לבן זוגו לשעבר.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="ZicuiYeladim1">זיכוי בעד ילדים :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">יש לרשום את הנתונים בטבלה השורה המתאימה ל"בן זוג רשום" ואו לבן/בת הזוג, לפי
+						העניין. יש לרשום את מספר הילדים שבחזקתך ואו שלא בחזקתך, בהתאם לגילם בשנת המס.
+						"הורה יחיד" ירשום את מספר ילדין שלגביהן אין הורה נוסף (נפטר או שאינו רשום במרשם
+						האוכלסין), בנוסף לרישום בשדה 260.
+                       יש למלא את נתוני הילדים על ידי מילוי "אשף עזרה" ילדים במערכת.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod026">קוד 026 – זיכוי בגין משפחה חד הורית :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">אם הינך הורה במשפחה חד הורית שלפחות ילד אחד בחזקתך ובגינו
+						הינך מקבל קצבת ילדים, יש לסמן קוד זה. בהמשך יש לסמן במקום המתאים אם הינך מנהל
+						או לא מנהל משק בית משותף עם יחיד אחר.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod029-129">קודים 029, 129 – זיכוי בעד כלכלת ילדים
+						:</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הורים החיים בנפרד וכלכלת ילדיהם מחולקת ביניהם יקבל ההורה
+						שאינו זכאי לזיכוי בעד ילדים נקודת זיכוי אחת נוספת עבור השתתפות בכלכלת ילדיו. אם
+						הינך עונה להגדרה הנ"ל יש לסמן קוד זה.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod023-131">קוד 023, 131 – זיכוי בעד ילד&nbsp;נטול
+						יכולת :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">בקוד זה יש למלא את מספר הילדים&nbsp;"נטולי היכולת". הינך
+						זכאי לשתי נקודות זיכוי בעד כל נטול יכולת.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>"נטול יכולת":</b>ילד משותק,עיוור או עם מוגבלויות. או ילד עד
+						גיל 18 הסובל מלקות למידה חמורה.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>שים לב:</b> במקרה שהכנסתו של נטול היכולת ובן זוגו
+						(כולל הכנסות פטורות) גבוהה מ- <span id="netulMishp">aaaaa</span>₪ , או אם אין
+						לנטול היכולת בן זוג - והכנסתו גבוהה מ- <span id="netul">aaaaa</span>₪
+						<br>
+                                            לא יינתן זיכוי כלשהו עבור נטול היכולת.<br>
+                                            ניתן לקבל זיכוי בגין נטול יכולת גם אם לא מוחזק במוסד.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod324-224">קודים 324, 224 – זיכוי בעד חייל משוחרר
+						:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">לחייל משוחרר (לרבות שירות לאומי) יש לציין את תאריך השחרור
+						מ"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('SherutSadir');">שירות
+							סדיר</a>" ( חודש ושנה ).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni">. שירות סדיר " – שירות בצה"ל במשמר הגבול, במשטרה והן
+						שירות התנדבותי במסגרת השירות הלאומי "</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod124-024">קודים 124, 024 – מספר חודשי שירות
+						מלאים :
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">ציינו את מספר חודשי השירות המלאים ב"<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('SherutSadir');">שירות
+							סדיר</a>".
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod181-182">קודים 181 ,182 - סיום לימודים לתאר
+						אקדמאי/לימודי מקצוע:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>תואר מוכר -</b> כמשמעותו בחוק המועצה להשכלה גבוהה,
+						התשי"ח - 1958. לעניין זה "מוסד להשכלה גבוהה", כמשמעותו בחוק המועצה.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>לימודי מקצוע- </b>לימודים לרכישת מקצוע מסוים, כולל
+						לימודים לתעודת הוראה בהיקף שעות לימוד הזהה ל- 1,700 שעות לימוד הנהוגות במוסד
+						להשכלה גבוהה.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">הזכאות היא למס' שנות מס כמספר שנות לימודיו של היחיד, החל
+						בשנת המס שלאחר שנת המס שבה הסתיימו לימודיו.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>תואר ראשון - </b>נקודת זיכוי אחת לכל שנה החל מהשנה שלאחר סיום הלימודים כמספר שנות הלימוד לתואר, אך לא יותר מ 3- שנים
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>תואר שני - </b>זכאות למחצית נקודת הזיכוי לכל שנה החל מהשנה שלאחר סיום הלימודים כמספר שנות הלימוד לתואר, אך לא יותר משנתיים</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>תואר שלישי ברפואה או ברפואת שיניים - </b>זכאות לנקודת זיכוי אחת בשלוש שנות מס ראשונות שלאחר סיום לימודיו ועוד חצי נקודת זיכוי בשתי שנות המס הבאות.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>תואר שלישי ישיר - </b>יינתן זיכוי לתואר ראשון כאמור לעיל, ומשנת המס שלאחר סיום הלימודים לתואר שלישי תינתן מחצית נקודת זיכוי למשך שנתיים החל משנת המס שלאחר שנת המס שבה הסתיימו לימודיו לתואר אקדמי שלישי.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>תעודת מקצוע - </b>זכאות נקודת הזיכוי אחת לכל שנה החל
+						מהשנה שלאחר סיום הלימודים כמספר שנות הלימוד, אך לא יותר מ 3- שנים.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">ההטבה ניתנת עבור תואר אקדמי ראשון אחד או לתואר אקדמי שני
+						אחד בלבד.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">תואר שלישי ישיר או תעודת מקצוע - דינן כתואר ראשון או שני
+						, לפי העניין.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">ניתן לקבל הזכאות עבור תואר ראשון ושני או שלישי.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">יחיד שקיבל ההטבה עבור תואר ראשון ואח"כ למד לתואר שלישי
+						ברפואה או ברפואת שיניים, יוכל לקבל השלמת הטבה.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">ההטבה תינתן רק ליחיד המציג אישור על סיום לימודיו וזכאותו
+						לתואר או תעודה כאמור.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText"><b>ניתן לקבל את ההטבה באחת משלוש דרכים:</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">תינתן הצהרה למעביד על גבי צירוף טופס 119, לטופס 101.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">תינתן באמצעות עריכת תיאום מס במשרד השומה בצירוף טופס 119,
+						לטופס 116.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">כמו כן, ניתן לקבל את ההטבה במסגרת הגשת דוח שנתי שדה 181
+						או 182.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="ZicuimIsiim">זיכויים אישיים - "זיכוי" הוא סכום
+						המופחת מהמס
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertMisheni" id="Kod036">קוד 036 – זיכוי בעד תשלומים לביטוח חיים:</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsKotertText">רשמו את הסכומים הבאים השייכים ל<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');"><u>בן
+								הזוג הרשום</u></a>:</td>
+                                        <tr>
+                                            <td class="clsKotertText">1. מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> את הסכומים המופיעים בקודים אלו.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">2. תשלום לביטוח חיים ( עבור מרכיב הסיכון בלבד)&nbsp;בחברת
+						ביטוח, לפי האישורים שבידכם, שלא נרשמו בטופס 106.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod081">קוד 081- זיכוי בעד תשלומים&nbsp;לביטוח
+						חיים :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">רשמו את הסכומים הבאים השייכים לבן הזוג (שאינו רשום) :
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">1. מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> את הסכומים המופיעים בקודים אלו.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">2. תשלום לביטוח חיים ( עבור מרכיב הסיכון בלבד) בחברת
+						ביטוח, לפי האישורים שבידכם, שלא נרשמו בטופס 106.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="BituchShirim">זיכוי בעד תשלומים לביטוח קיצבת
+						שאירים</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">יחיד יזוכה ממס בשיעור של 35% בעד תשלומים ששילמו הוא או בן
+						זוגו לקופת גמל לקצבה או ששילמו כאמור למדינה, לרשות מקומית או לגוף אחר שקבע שר
+						האוצר לשם שמירת זכויות הפנסיה שלו או של בן זוגו או שישולמו כאמור לביטוח קצבת
+						שארים.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod140">קוד 140 : זיכוי בעד תשלומים לביטוח קיצבת
+						שאירים בן הזוג הרשום</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">יש לרשום את תשלומיך לביטוח קצבת שארים כולל הסכומים <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                                                <u>מטופסי 106</u></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod240">קוד 240 : זיכוי בעד תשלומים לביטוח קיצבת
+						שאירים בן/בת הזוג(שאינו רשום)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">יש לרשום את תשלומיך לביטוח קצבת שארים כולל הסכומים <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                                                <u>מטופסי 106</u></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod045">קוד 045 – זיכוי בעד תשלומים לקצבה :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> של <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                    <u>בן הזוג הרשום</u></a> את הסכומים המופיעים בקודים אלו.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod086">קוד 086- זיכוי בעד תשלומים לקצבה :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> של בן הזוג (שאינו רשום)&nbsp;את הסכומים המופיעים בקודים
+						אלו.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod268">קוד - 268</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">יש לרשום סכומים ששולמו לקופ"ג לקצבה כ"עמית עצמאי" ושלא
+						בחרת לרשום סכום בשדה 135</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod269">קוד - 269</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">יש לרשום סכומים ששולמו לקופ"ג לקצבה כ"עמית עצמאי" ושלא
+						בחרת לרשום סכום בשדה 180</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod132">קוד 132- זיכוי בעד תשלומים ששולמו בגין
+						אחזקת בן משפחה במוסד</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">רשמו את הסכומים ששילם <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                                <u>בן הזוג הרשום</u></a> עבור החזקה במוסד מיוחד של "מזכה". הרישום יעשה ע"פ
+						קבלות מקוריות המאשרות שדורש הזיכוי הוא המשלם. ניתן לדרוש זיכוי בגין הוצאות
+						החזקה במוסד עבור כל מזכה.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText"><b>"מזכה":</b> בן זוג או הורה משותקים לחלוטין, עיוורים או
+						בלתי שפויים, או ילד משותק, עיוור או עם מוגבלויות.<br>
+                                                <b>שים לב:</b> במקרה שהכנסתו של נטול היכול ובן זוגו (כולל הכנסות פטורות) גבוהה
+						מ- <span id="netulMishp1">aaaaa</span>₪ , או אם אין לנטול היכולת בן זוג -
+						והכנסתו גבוהה מ- <span id="netul1">aaaaa</span>₪ לא יינתן זיכוי כלשהו עבור נטול
+						היכולת.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">אם הזיכוי נדרש עבור ילדים קיימת אפשרות חלופית לדרוש <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');">
+                                                <u>נקודות זיכוי</u></a> (קודים 131/023) עפ"י תעודה רפואית מרופא מומחה בתחום
+						המחלה (<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes127');"><u>טופס
+								127</u></a>). לא ניתן לקבל את שניהם עבור אותו מזכה. ראו הסברים נוספים
+						בחוברת "דע זכויותיך וחובותיך"
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod232">קוד 232- רשמו את הסכומים ששילם בן הזוג
+						(שאינו רשום) עבור החזקה במוסד מיוחד של "מזכה" :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">רשמו את הסכומים ששילם <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                                <u>בן הזוג הרשום</u></a> עבור החזקה במוסד מיוחד של "מזכה". הרישום יעשה ע"פ
+						קבלות מקוריות המאשרות שדורש הזיכוי הוא המשלם. ניתן לדרוש זיכוי בגין הוצאות
+						החזקה במוסד עבור כל מזכה.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText"><b>"מזכה":</b> בן זוג או הורה משותקים לחלוטין, עיוורים או
+						בלתי שפויים, או ילד משותק, עיוור או עם מוגבלויות.
+						<br>
+                                                <b>שים לב:</b> במקרה שהכנסתו של נטול היכול ובן זוגו (כולל הכנסות פטורות) גבוהה
+						מ- <span id="netulMishp2">aaaaa</span>₪ , או אם אין לנטול היכולת בן זוג -
+						והכנסתו גבוהה מ- <span id="netul2">aaaaa</span>₪
+						<br>
+                                                לא יינתן זיכוי כלשהו עבור נטול היכולת.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">אם הזיכוי נדרש עבור ילדים קיימת אפשרות חלופית לדרוש <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');">
+                                                <u>נקודות זיכוי</u></a> (קודים 131/023) עפ"י תעודה רפואית מרופא מומחה בתחום
+						המחלה (<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes127');"><u>טופס
+								127</u></a>). לא ניתן לקבל את שניהם עבור אותו מזכה. ראו הסברים נוספים
+						בחוברת "דע זכויותיך וחובותיך"
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod037">קוד 037- זיכוי בגין תרומות למוסד ציבורי :
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">רשמו את סכומי התרומות שתרם <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                                <u>בן הזוג הרשום</u></a> לגופים ציבוריים שהוכרו לעניין זה על ידי שר האוצר
+						עפ"י קבלות מקוריות (הסכום המזערי המזכה לשנת המס <span id="ShantMas2">aaaaa</span>הוא
+						<span id="Scum_Mizari1">aaaaa</span>₪ והסכום המקסימלי המזכה הוא 30% מה<a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');"><u>הכנסה
+								החייבת</u></a> או <span id="Terumot_hetel1">aaaaa</span>₪ – הנמוך
+						מביניהם). לגבי ניצול תרומות שנתרמו בשנה קודמת – ראו הסברים נוספים בחוברת "דע
+						זכויותיך וחובותיך".
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod237">קוד 237- זיכוי בגין תרומות למוסד ציבורי :
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">רשמו את סכומי התרומות שתרם בן הזוג לגופים ציבוריים שהוכרו
+						לעניין זה על ידי שר האוצר עפ"י קבלות מקוריות (הסכום המזערי המזכה לשנת המס <span id="ShantMas3">aaaaa</span>הוא <span id="Scum_Mizari2">aaaaa</span>₪ והסכום המקסימלי המזכה
+						הוא 30% מה<a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');"><u>הכנסה
+								החייבת</u></a> או <span id="Terumot_hetel2">aaaaa</span>₪ – הנמוך
+						מביניהם). לגבי ניצול תרומות שנתרמו בשנה קודמת – ראו הסברים נוספים בחוברת "דע
+						זכויותיך וחובותיך".
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod143">קוד 143 – זיכוי בעד הנצחת זכרו של חייל ומי
+						שנספה בפעולות איבה :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">רשמו בקוד זה את סכום התרומה שמיוחסת לבן הזוג הרשום בגין
+						הנצחת זכרו של חייל או מי שנספה בפעולות איבה. סכום הזיכוי יינתן על 30% מסכומי
+						התרומה להנצחת זכרו של חייל, נפגע פעולות איבה שהוא בן משפחה.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText"><b>בן משפחה לזיכוי זה:</b> בן הזוג, בן, אח, הורה, נכד,
+						חתן, גיס. רשמו כאן את הסכומים עפ"י אישורים מתאימים.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod144">קוד 144- זיכוי בעד הנצחת זכרו של חייל ומי
+						שנספה בפעולות איבה :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">רשמו בקוד זה את סכום התרומה שמיוחסת לבן הזוג (שאינו
+						הרשום) בגין הנצחת זכרו של חייל או מי שנספה בפעולות איבה. סכום הזיכוי יינתן על
+						30% מסכומי התרומה להנצחת זכרו של חייל, נפגע פעולות איבה שהוא בן משפחה.
+						<br>
+                                                בן משפחה לזיכוי זה: בן הזוג, בן, אח, הורה, נכד, חתן, גיס. רשמו כאן את הסכומים
+						עפ"י אישורים מתאימים.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod139">קוד 139 : זיכוי לתושב אילת על הכנסתו
+						ממשכורת, מעסק או ממשלח יד שהופקה באילת</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">מי שהיה במשך כל שנת המס תושב אילת זכאי באותה שנה לזיכוי ממס בשיעור 10% מהכנסתו
+						החייבת שהיא הכנסה מיגיעה אישית, עד לסכום של <span id="ZikuiEilat1">aaaaa</span>
+                                                ₪, שנצמחה או הופקה באזור אילת או באזור חבל אילות, אך לא יותר מהמס שהוא חייב בו
+						בשל הכנסתו האמורה. עמדת רשות המסים, לעניין סעיף זה בלבד, הינה כי יראו הכנסה
+						מקצבה שמקבל תושב אילת כהכנסה שהופקה באזור אילת. יש לרשום בשדה זה את ההכנסה
+						האמורה.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod183">קוד 183 : זיכוי לתושב אילת על הכנסתו
+						ממשכורת, מעסק או ממשלח יד שהופקה באילת</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">מי שהיה במשך כל שנת המס תושב אילת זכאי באותה שנה לזיכוי ממס בשיעור 10% מהכנסתו
+						החייבת שהיא הכנסה מיגיעה אישית, עד לסכום של <span id="ZikuiEilat2">aaaaa</span>
+                                                ₪, שנצמחה או הופקה באזור אילת או באזור חבל אילות, אך לא יותר מהמס שהוא חייב בו
+						בשל הכנסתו האמורה. עמדת רשות המסים, לעניין סעיף זה בלבד, הינה כי יראו הכנסה
+						מקצבה שמקבל תושב אילת כהכנסה שהופקה באזור אילת. יש לרשום בשדה זה את ההכנסה
+						האמורה.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="HanchotYeshuvim">הנחות ישובים והנחה לאנשי כוחות
+						הביטחון :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">לצורך קביעת הזכאות בחישוב ההנחה עליך להשתמש באשף ולבחור
+						את שם הישוב בו הינך מתגורר.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">כמו כן, את תאריך הגעתך ועזיבתך את הישוב. אם לא עזבת את הישוב בשנת המס אין למלא תאריך זה.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">הסברים מפורטים ורשימת הישובים ניתן למצוא בפרק ט בחוברת דע את
+						זכויותיך וחובותיך.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni">הנחה לאנשי כוחות הביטחון :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">ההנחה ניתנת לאיש כוחות הביטחון לו משולמת&nbsp;תוספת רמת
+						פעילות א' במשכורת. אם משולמת לך תוספת רמת פעילות א' הינך זכאי להנחה במס בשיעור
+						של 5% על ההכנסה שלגביה משולמת תוספת רמת פעילות א'.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni">א. זיכוי במס לאיש כוחות הביטחון שהוא בן הזוג הרשום :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">אם הינך איש כוחות הביטחון ומשולמת לך במשכורת תוספת רמת
+						פעילות א' , הינך זכאי להנחה במס ( זיכוי ) בשיעור של 5% על הכנסתך ממשכורת שלגביה
+						משולמת תוספת רמת פעילות א' ועד להכנסה של <span id="ZicuiForceMen1">aaaaa</span>
+                                                ₪ בשנה.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">לצורך חישוב ההנחה עליך להשתמש באשף ( האשף נועד להנחות
+						ישובים ולאנשי ,כוחות הביטחון" ) ולמלא את ההכנסה שלגביה משולמת לך תוספת רמת
+						פעילות א'.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">הסברים מפורטים ניתן למצוא בחוברת דע את זכויותיך וחובותיך
+						.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">שימו לב - איש כוחות הבטחון המתגורר בישוב מזכה זכאי להנחה
+						הגבוהה מבניהן אך לא לשתיהן בו זמנית.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni">ב. זיכוי במס לאיש כוחות הביטחון שהוא בן הזוג :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">אם הינך איש כוחות הביטחון ומשולמת לך במשכורת תוספת רמת
+						פעילות א' , הינך זכאי להנחה במס ( זיכוי ) בשיעור של 5% על הכנסתך ממשכורת שלגביה
+						משולמת תוספת רמת פעילות א' ועד להכנסה של <span id="ZicuiForceMen2">aaaaa</span>
+                                                ₪ בשנה.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">לצורך חישוב ההנחה עליך להשתמש באשף ( האשף נועד להנחות
+						ישובים ולאנשי "כוחות הביטחון" ) ולמלא את ההכנסה שלגביה משולמת לך תוספת רמת
+						פעילות א'.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">הסברים מפורטים ניתן למצוא בחוברת דע את זכויותיך וחובותיך.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">שימו לב - איש כוחות הביטחון המתגורר בישוב מזכה זכאי להנחה
+						הגבוהה מבניהן אך לא לשתיהן בו זמנית.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni">מעבר מישוב מזכה אחד לישוב מזכה אחר בשנת המס</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">במקרה ועברת באותה שנת מס מישוב מזכה אחד לישוב מזכה אחר
+                                                 יש למלא את הפרטים לעיל לגבי שני הישובים.
+                                                במקרה והנך "מכוחות הביטחון" ובמהלך השנה עברת לישוב מזכה,
+                                                הנך ראשי למלא את תאריך הגעתך לישוב ולקבל את הזיכוי בהתאם.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertText">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="NikuimBamakor1">ניכויים במקור :</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clsKotertMisheni" id="Kod042">קוד 042 – ניכוי מס במקור ממשכורת ושכר
+						עבודה :</td>
+                                            <tr>
+                                                <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('NikuimBamakor');">
+                                    <u>ניכויים במקור</u></a> מהכנסות משכר ומקצבאות שנוכו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');"><u>בן
+								הזוג הרשום</u></a> ובן הזוג (שאינו הרשום) יש לסכם סכומים אלו בקוד 042.
+						אם קבלתם מספר טפסי 106 יש לסכם את סכום הניכוי במקור מכולם.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="clsKotertMisheni" id="Kod040">קוד 040 – ניכוי מס במקור מהכנסות אחרות :</td>
+                                                <tr>
+                                                    <td class="clsKotertText">העתיקו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes837-857');"><u>טופס
+								837 / 857</u></a> את ה<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('NikuimBamakor');"><u>ניכויים
+								במקור</u></a> מהכנסות אחרות, מטופס 867ג'&nbsp;את ניכוי במקור מדיבדנד
+						וריבית מניירות ערך, מטופס 867(א+ב) את ניכוי במקור מרווח הון מניירות ערך
+						סחירים.&nbsp;שנוכו מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');"><u>בן
+								הזוג הרשום</u></a> ובן הזוג (שאינו הרשום). יש לסכם סכומים אלה בקוד 040.
+						אם קבלתם מספר טפסי 837 ,857 ,867ג', 867(א+ב) יש לסכם את סכום הניכוי במקור
+						מכולם.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="clsKotertMisheni" id="Kod043">קוד 043 – ניכוי מס במקור מהכנסות ריבית
+						מפיקדונות ותוכניות חיסכון&nbsp;:
+                                                    </td>
+                                                    <tr>
+                                                        <td class="clsKotertText">העתיקו <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes867');">
+                                                            <u>מטופסי 867</u></a> את הניכויים במקור מהכנסות ריבית על פיקדונות ותוכניות
+						חיסכון, שנוכו משני בני הזוג או מילדך שטרם מלאו להם 18. הסכום שיש למלא בשדה זה
+						הינו לפני החזרי מס שהוחזרו באופן אוטומטי(אם היו כאלה).
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">סכומים אלה יש להעתיק מטופסי 867 שברשותכם מהשורה המתאימה
+						לקוד זה.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertRashi" id="Result">תוצאות חישוב המס:</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="SachHacnasot">סה"כ הכנסות :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הן ההכנסות החייבות לפני ה<a href="javascript:ShowMilonMunachimFromHelp('NikuimIshiim');"><u>ניכויים
+								האישיים</u></a> ולאחר הקיזוזים והפטורים שהותרו לפי פקודת מס הכנסה. אם
+						מגיעים לכם פטורים לפי <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Seif125');">סעיף 125 (ד) ו- (ה)</a> לפקודת מס הכנסה, סה"כ ההכנסות שיופיעו הינם לאחר
+						התחשבות בפטורים אלו.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="NikuimIshiim1">ניכויים אישיים :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הם סכומים המופחתים מה<a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');"><u>הכנסה
+								החייבת</u></a> לצורך חישוב המס. ניכויים אישיים</U></A> ניתנים עבור
+						סכומים ששולמו לקרן השתלמות לעצמאיים, לקופת גמל לקיצבה&nbsp;כ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('AmitAzmai');"><u>עמית
+								עצמאי</u></a>. החיסכון במס הנובע מהניכוי הוא הסכום המותר בניכוי כשהוא
+						מוכפל בשיעור המס השולי שחייבת בו הכנסתך.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="AmitAzmai">עמית עצמאי :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הינו עמית בקופ"ג או בקרן השתלמות אשר מפריש לקופת גמל /
+						קרן השתלמות באופן עצמאי ללא השתתפות המעביד.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni">ניכוי בשל תשלומים לקרן השתלמות לעצמאים :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">בשנת המס יותר ניכוי עבור תשלומים ששילם יחיד לקרן השתלמות
+						לעצמאיים לאחר שהופחת ממנו 2.5% מההכנסות החייבות מעסק או משלח יד ובתנאי שסך
+						הניכוי לא יעלה על 4.5% מההכנסות מעסק או משלח יד או על תקרה של <span id="NicuiKerenEstalmut">aaaaa</span> ₪.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni">ניכוי בשל השתתפות במחקר מדעי :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">ניכוי בשל השתתפות במחקר מדעי אך לא יותר מ – 40% מההכנסה
+						החייבת בשנת המס שבה שולמה ההוצאה.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="NikuiGemel">ניכוי בעד תשלומים לקופ"ג :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">לגבי הכנסה ממשכורת ושכר עבודה, עליה מעביד לא שילם לקופ"ג
+						או שלא חל לגביה זכות לפנסיה תקציבית, יותר ניכוי של הסכומים ששולמו אך לא יותר מ
+						– 5% מההכנסה ועד לתקרה של <span id="Scum_Tiktra">aaaaa</span>₪ בשנה.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם ההכנסה היא גם ממשכורת ושכר עבודה וגם ממקורות אחרים,
+						תחושב תחילה ההכנסה ממשכורת.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הסבר מפורט מצוי בחוברת דע את זכויותך.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="NikuiMof">ניכוי בעד תשלומים לביטוח לאומי :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">ניכוי של 52% מהסכומים ששולמו בשנת המס, בתנאי שהתשלומים
+						ששולמו היו לגבי הכנסה שלא ממשכורת או שכר עבודה, ובתנאי שהניכוי לא יעלה על סכום
+						ה<a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');"><u>הכנסה החייבת</u></a>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="NikuiOil">ניכוי בגין השקעה בחיפושי נפט :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם הינך משקיע בחיפושי נפט הינך זכאי לניכוי בגין השקעתך על
+						בסיס יחידות הערך הנקוב המוחזקות על ידך בתום השנה. הניכוי לא יעלה על סכום רכישת
+						היחידה.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="HacnsaHayevet">הכנסה חייבת :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">היא סך ההכנסה לאחר ה<a href="javascript:ShowMilonMunachimFromHelp('NikuimIshiim');"><u>ניכויים
+								האישיים</u></a>. על הכנסה זו מחושב ה<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('MasBruto');"><u>מס
+								ברוטו</u></a>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="MasBruto">מס ברוטו :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">המס מחושב על ה<a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');"><u>הכנסה
+								החייבת</u></a> לאחר <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('NikuimIshiim');">
+                                    <u>ניכויים אישיים</u></a>. חישוב המס נעשה לפי מדרגות המס. הכנסות <a href="javascript:ShowMilonMunachimFromHelp('HacnsaMeyegiaIshit');">
+                                        <u>מיגיעה אישית</u></a> מחויבות בשיעורי מס התחלתיים של 10%, 14%, 20%, ,
+						31%, 35%, .ו- 47%. ככל שההכנסה החייבת גדלה שיעור המס השולי שבו היא מחויבת –
+						עולה. הכנסות שאינן מיגיעה אישית מחויבות בשיעורי מס התחלתיים של 31%. ישנן הכנסות
+						החייבות בשיעורי מס מיוחדים ללא מדרגות המס. הסברים מפורטים לעניין שיעורי המס
+						ניתן למצוא בחוברת דע את זכויותיך וחובותיך.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <!--<TR>
+					<TD class="clsKotertMisheni" id="HitelHacnasot">:היטל הכנסות גבוהות</TD>
+				</TR>
+				<TR>
+					<TD class="clsKotertText">היטל הכנסות גבוהות בשיעור של 0.5% מוטל על נישום שמתקיימים
+						בו אחד מהתנאים הבאים :
+					</TD>
+				</TR>
+				<TR>
+					<TD class="clsKotertText">1. סה"כ <A href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');">
+							<U>הכנסותיו החייבות</U></A> ( משכורת ואחרות ) גבוה מ – 500,000 ₪. במידה
+						והכנסתך החייבת גבוהה מ – 500,000 ₪ אולם לא יותר מ – 525,000 ₪ . תקבל הנחה בהיטל
+						בשיעור של 10% מההפרש בין הכנסתך החייבת לבין 525,000 ₪.
+					</TD>
+				</TR>
+				<TR>
+					<TD class="clsKotertText">2. הכנסותיו ממשכורת בלבד גבוהה מ – 360,000 ₪. במידה
+						והכנסתך ממשכורת גבוהה מ – 360,000 ₪ אולם לא יותר מ – 378,000 ₪ . תקבל הנחה
+						בהיטל בשיעור של 10% מההפרש בין הכנסתך החייבת לבין 378,000 ₪.
+					</TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD class="clsKotertMisheni">.היטל הכנסות גבוהות חל אך ורק בשנת 2006 בלבד</TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>-->
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="Zicuim">זיכויים :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText"><a href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');"><u>נקודת
+								זיכוי</u></a> היא סכום המופחת מחיוב המס. ב<a href="javascript:ShowMilonMunachimFromHelp('HishuvNifrad');"><u>חישוב
+								מאוחד</u></a> ניתנות נקודות הזיכוי ל<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');"><u>בן
+								הזוג הרשום</u></a> תוך התייחסות לבן הזוג השני. ב<a href="javascript:ShowMilonMunachimFromHelp('HishuvNifrad');"><u>חישוב
+								נפרד</u></a> ניתנות נקודות הזיכוי לכל אחד מבני הזוג. שוויה של נקודת
+						זיכוי הוא <span id="Nekudat_Zicui_Shana2">aaaaa</span>₪ בשנה ( <span id="Nekudat_Zicui_Hodesh1">aaaaa</span>₪ בחודש ).</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiMishmarot">זיכוי משמרות :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זיכוי של 15% מההכנסה מעבודה במשמרות במפעל תעשייתי הזיכוי
+						הוא על אותו חלק מעבודה במשמרות אשר לאחר צירופו למשכורת אינו עולה על <span id="Secum_Zicui_Up1">aaaaa</span>₪. סך כל הזיכוי לא יעלה על <span id="Secum_Zicui">aaaaa</span> ₪.
+						בשנה</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="AvodaBeMishmarot">עבודה במשמרות :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">היא עבודה במשמרת שנייה ושלישית בלבד. שלגביה המעביד משלם
+						תוספת שכר בנוסף על המשכורת המקובלת בחוזה העבודה.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni">מפעל תעשייתי :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הוא מפעל שעיקר פעילותו היא פעילות ייצורית.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiSefar">זיכוי ישובים :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם התגוררת ביישוב אשר זכאי להנחה, הינך זכאי להנחה מהמס
+						בשיעורים לפי מקום התושבות על הכנסתך החייבת מיגיעה אישית בשנת
+						המס ועד לתקרת הכנסות בהתאם למקום התושבות
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם בחרת את שם היישוב באשף, החישוב יהיה בהתאם לתקופת
+						מגוריך בישוב המזכה בהנחה ( והזיכוי יינתן לגבי כל שנת המס ).</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הסברים מפורטים ורשימת הישובים ניתן למצוא בחוברת דע את
+						זכויותיך וחובותיך.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiHayalA">זיכוי לחייל המקבל תוספת רמת פעילות א'
+						:</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">חייל, שוטר, עובד שירות הביטחון ואיש משמר הגבול המשרתים ב"<a class="clsLinkText" href="javascript:GoToHref('Ezor');"><u>אזור</u></a>"
+						זכאים לזיכוי בשיעור של <span id="Zicui_Shoter">aaaaa</span>% ממשכורתם המיוחדת.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="Ezor>">אזור :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">יהודה שומרון וחבל עזה.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiNesia">זיכוי עבור תושב ונסיעה למקום העבודה :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם הינך תושב ישראל, אתה זכאי לשתי <a href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');">
+                                                            <u>נקודות זיכוי</u></a> וכמו כן הינך זכאי לרבע נקודת זיכוי בעד נסיעה למקום
+						העבודה וחזרה ממנה.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiOle">זיכוי לעולה חדש ותושב חוזר "מוטב" :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם אתה עולה חדש מגיעות לך <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');">
+                                                            <u>נקודות זיכוי</u></a> במשך תקופה רצופה של 42 חודשים מהחודש הראשון של
+						עלייתך לישראל כמפורט להלן : רבע ( 1/4 ) נקודת זיכוי לחודש במשך 18 חודשים
+						רצופים. שישית ( 1/6 ) נקודת זיכוי לחודש במשך 12 חודשים נוספים. אחד חלקי שתים
+						עשרה ( 1/12 ) נקודות זיכוי לחודש במשך 12 חודשים נוספים.
+
+
+                                                            אם עליתה לישראל החל מיום 1.1.2022 מגיעות לך נקודות זיכוי במשך תקופה רצופה של 54 חודשים מהחודש הראשון של עלייתך לישראל כמפורט להלן:
+1/12 נקודת זיכוי במשך 12 חודשים ראשונים. 1/4 נקודות זיכוי במשך 18 החודשים הנוספים. 1/6 נקודות זיכוי במשך 12 חודשים נוספים. 1/12 נקודות זיכוי לחודש במשך 12 חודשים נוספים.
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">במניין 42 או 54 חודשים לא תובא בחשבון תקופת שירות סדיר או תקופת
+						לימודים במוסד ללימודים על תיכוניים ( תקופה זו תוקפא במהלך השירות הסדיר או
+						הלימודים ולאחריהם יינתנו יתרות נקודות הזיכוי שטרם נוצלו ), על פי בקשת העולה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">יש לציין כי הסימולטור אינו מכליל את תקופת ההקפאה לצורך
+						חישוב המס באם נדרשה על ידך.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">תושב חוזר "מוטב" הינו יחיד ששב והיה לתושב ישראל בתקופה
+						שמיום 16.5.2010 ועד ליום 30.9.2012, לאחר שהיה לתושב חוץ במשך 6 שנים רצופות.
+						לענין זה יראו מי שבידו תושב חוזר מוטב מאת המשרד לקליטת העלייה. למי שאינו מחזיק
+						בתעודת תושב חוזר מוטב ועמד בתנאים כאמור לעיל, יצרף את טופס ההצהרה 1507. נקודות
+						הזיכוי למי שעונה להגדרת תושב חוזר "מוטב" יינתנו באופן זהה לאלו הניתנות לעולה
+						חדש לרבות נטרול החודשים כפי שמוסבר לעיל. פרוט והרחבה בחוברת דע זכויותיך
+						וחובותיך.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiIsha">זיכוי לאישה :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אישה זכאית לחצי ( ½) <a href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');">
+                                                            <u>נקודת זיכוי</u></a> ב<a href="javascript:ShowMilonMunachimFromHelp('HishuvNifrad');"><u>חישוב
+								נפרד</u></a> או לאישה שהיא <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                    <u>בן הזוג הרשום</u></a> ב<a href="javascript:ShowMilonMunachimFromHelp('HishuvNifrad');"><u>חישוב
+								מאוחד</u></a>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiBeadBenZug">זיכויים בעד בן&nbsp;הזוג :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">1. ב<a href="javascript:ShowMilonMunachimFromHelp('HishuvNifrad');"><u>חישוב
+								מאוחד</u></a> אם הינך תושב ישראל והינך <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('BenZugRashum');">
+                                    <u>בן הזוג הרשום</u></a> , אחד מבני הזוג יחיד מוטב ולבן זוגך לא הייתה הכנסה
+						בשנת המס, אתה זכאי ל<a href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');"><u>נקודת
+								זיכוי</u></a> אחת עבורו.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">2. אם הינך תושב ישראל והינך בן הזוג הרשום ולבן זוגך היו
+						הכנסות מיגיעה אישית בשנת המס, אולם המס לא חושב ב<a href="javascript:ShowMilonMunachimFromHelp('HishuvNifrad');"><u>חישוב
+								נפרד</u></a> אתה זכאי&nbsp;ל – 1.5 נקודות נוספות אם לא היו לכם ילדים
+						מתחת לגיל 18 ו – 1.75 נקודות באם היו לכם ילדים מתחת לגיל 18 , וכמו כן, אם אחד
+						מבני הזוג יחיד מוטב, לנקודת זיכוי כאמור בסעיף 1 לעיל.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiDemiMezonot">זיכוי בגין תשלום דמי מזונות :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">גרוש המשלם מזונות לבן זוגו לשעבר והוא נשוי לבן זוג אחר,
+						זכאי ל<a href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');"><u>נקודת זיכוי</u></a>
+                                                            נוספת.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiYeladim">זיכוי בעד ילדים :
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זוג נשוי בחישוב נפרד זכאית האישה לנקודות "זיכוי ילדים"
+						והגבר לנקודות "זיכוי פעוט".
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">"זיכוי ילדים":  אחד וחצי נקודות זיכוי בשל כל ילד בשנת לידתו, שתיים וחצי נקודות בשל כל ילד החל בשנת המס בה מלאו לו שנה עד לשנת המס בה מלאו לו חמש שנים, שתי נקודות בשל כל ילד שמלאו לו שש שנים וטרם מלאו שלוש עשרה שנים, ונקודת זיכוי אחת בשל כל ילד החל בשנת המס שבה מלאו לו שלוש עשרה שנים ועד לשנת המס שבה מלאו לו 17 שנים, וחצי נקודת זיכוי בשל כל ילד בשנה בה מלאו לו 18 שנים.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">"זיכוי פעוט": אחד וחצי נקודות זיכוי בשל כל ילד בשנת לידתו שתיים וחצי נקודות בשל כל ילד החל בשנת המס בה מלאו לו שנה עד לשנת המס בה מלאו לו חמש שנים, נקודה בשל כל ילד שמלאו לו שש שנים וטרם מלאו שלוש עשרה שנים,
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זיכוי ממס בגין ילדים או פעוט כאמור לעיל יינתן רק על הכנסה
+						מיגיעה אישית.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni">זיכוי ליחיד עבור ילדים ממשפחה חד הורית :
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">יחיד במשפחה חד-הורית זכאי ההורה המחזיק בילד והמקבל בגינו
+						קצבת ילדים מהביטוח הלאומי לנקודות "זיכוי ילדים", ההורה האחר זכאי לנקודות "זיכוי
+						פעוט". במקרה בו הילד הוא ילד להורה אחד, זכאי ההורה לנקודות "זיכוי ילדים"
+						ולנקודות "זיכוי פעוט" בשל אותו ילד.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni">נקודת זיכוי אחת נוספת בשל היות ההורה משפחה חד הורית:
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הורה במשפחה חד-הורית שלפחות ילד אחד בחזקתו ומקבל בגינו
+						קצבת ילדים ושאינו מנהל משק בית משותף עם יחיד אחר, זכאי לנקודת זיכוי אחת נוספת.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiYeladim2">זיכוי בעד כלכלת ילדים :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הורים החיים בנפרד וכלכלת ילדיהם מחולקת ביניהם יקבל ההורה, שאינו מחזיק בילד ולא
+						מקבל בגינו קצבת ילדים, נקודת זיכוי אחת נוספת עבור השתתפות בכלכלת ילדיו. (במידה
+						וההשתתפות היא חלקית יינתן חלק יחסי מנקודת הזיכוי בכפוף לחלקו בהוצאות הכלכלה ).
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiNaar">זיכוי נער :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">יחיד אשר מלאו לו 16 שנה וטרם מלאו לו 18 שנה זכאי ל<a href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');"><u>נקודת
+								זיכוי</u></a> נוספת.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiHayal">זיכוי לחייל/ת משוחרר/ת :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">חייל משוחרר:&nbsp;הוא מי ששירת לפחות 12 חודשים מלאים או
+						שוחרר מטעמי בריאות או נכות.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">שירות סדיר : שירות בצה"ל, במשמר הגבול או במשטרה וכן שירות
+						לאומי.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">חייל משוחרר מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('SherutSadir');">שירות
+							סדיר</a> אשר יש לו הכנסות <a href="javascript:ShowMilonMunachimFromHelp('HacnsaMeyegiaIshit');">
+                                <u>מיגיעה אישית</u></a> זכאי ל<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');"><u>נקודות
+								זיכוי</u></a> נוספות במשך 36 חודשים מיום שחרורו באופן הבא :
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">חייל לאחר 23 חודשי שירות מלאים וחיילת לאחר 22 חודשי שירות
+						מלאים, 1/6 נקודות זיכוי לחודש. הזכאות בשל תקופת שירות קצרה יותר הינה ל-1/12
+						נקודות זיכוי לחודש.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiToar">זיכוי למסיימי לימודים לתואר או תעודת
+						מקצוע:</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">מי שסיים לימודיו לתואר ראשון או לימודי מקצוע זכאי ל <a href="javascript:ShowMilonMunachimFromHelp('NekudotZicui');">
+                                                            <u>נקודת זיכוי</u></a>&nbsp; אחת.<br>
+                                                            מי שסיים לימודי תואר שני , זכאי בשנת המס <span id="ShantMas14">aaaaa</span>
+                                                            לחצי נקודת זיכוי.<br>
+                                                            מי שסיים לימודי תואר שלישי ברפואה או תואר דוקטור במסלול ישיר יקבל נקודת זיכוי
+						אחת או חצי נקודת זיכוי בהתאם.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiNetul">זיכוי בעד נטול יכולת :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם היה לך ילד משותק, עיוור או עם מוגבלויות הנך זכאי לשתי נקודות זיכוי בעד כל ילד.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText"> ככלל בגין כל נטול יכולת עליך להמציא <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes127');">
+                                                            <u>טופס 127</u></a> &nbsp; חתום ע"י רופא מומחה בתחום המחלה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText"> יחד עם זאת, ילד שאופין ונקבע זכאות לחינוך מיוחד או ילד המקבל גמלת ילד נכה או דרגת אי כושר 74% ומעלה מהמוסד לביטוח לאומי, די בצרוף טופס 116א לדוח ואין צורך במסמך רפואי נוסף.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">שים לב : לא ניתן לקבל זיכוי בגין נטול יכולת וזיכוי בעד
+						החזקת בן משפחה במוסד. עליך לבחור אחד מבין שני הזיכויים.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiBenMishfaha">זיכוי בעד החזקת בן משפחה במוסד :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם אתם משלמים למוסד מיוחד בעד החזקה של ילד, בן זוג או
+						הורה משותקים לחלוטין, מרותקים למיטה, עיוורים או בלתי שפויים בדעתם. יינתן לכם
+						זיכוי של 35% מהסכומים ששילמתם העולים על 12.5% <a href="javascript:ShowMilonMunachimFromHelp('HacnsaHayevet');">
+                            <u>מהכנסה החייבת</u></a>. כמו כן עליך להמציא <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes127');">
+                                <u>טופס 127</u></a> חתום ע"י רופא מומחה בתחום המחלה וטופס 116 א. .
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">שים לב : לא ניתן לקבל זיכוי בגין נטול יכולת וזיכוי בעד
+						החזקת בן משפחה במוסד. עליך לבחור אחד מבין שני הזיכויים.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ZicuiSoldier">זיכוי הנצחת חייל :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זיכוי בעד הוצאות להנצחת זכרו של בן משפחה שהיה חייל או
+						שוטר, שניספה בפועול איבה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זיכוי בשיעור של 30% מסכום ההוצאות. לעניין זה,"בן משפחה"
+						הוא בן זוג, בן, נכד,אח,הורה,גיס או חתן.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="KavlotTeromot">זיכוי תרומה :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זיכוי על תרומה מיוחדת בסכום של <span id="Zicui_Teruma_Meyuhedet">aaaaa</span>₪ או יותר למוסד ציבורי שאושר, לצורך זה, בידי שר האוצר, או קרן
+						לאומית.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זיכוי בשיעור של 35% מחלק התרומה שאינו עולה על 30% מההכנסה
+						החייבת או על <span id="Zicui_Terumot">aaaaa</span>₪ לפי הנמוך בינהם.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="BituchHayim">זיכוי בעד תשלומים לביטוח חיים וקופת
+						גמל שאישר נציב מס הכנסה
+						<br>
+                                                            (למעט קופת גמל שהיא קרן השתלמות).</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">1. בעד תשלומי פרמיות לביטוח חיים (ללא תשלום עבור מרכיב
+						חיסכון בביטוח חיים) יינתן זיכוי בכפוף לתקרה בשיעור של 25% מהתשלומים.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">2. בעד תשלומים לקופת גמל לקיצבה וביטוח שארים הזיכוי הוא
+						בשיעור של 35% מהתשלומים בכפוף לתקרה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">3. הזיכוי לגבי ביטוח חיים יינתן אך ורק לתושבי ישראל.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">4. הזיכוי יינתן גם לגבי חלק מן הסכומים שלא הותרו בניכוי
+						לפי סעיף 47 לפקודת מס הכנסה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הסבר מפורט מצוי בחוברת דע את זכויותך באתר האינטרנט .</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="MasMagia">מס מגיע :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הינו סך המס המגיע ממך ובן זוגך לאחר הפחתת <a href="javascript:ShowMilonMunachimFromHelp('NikuimIshiim');">
+                                                            <u>הניכויים</u></a> <a href="javascript:ShowMilonMunachimFromHelp('Zicuim');"><u>והזיכויים</u></a>
+                                                            האישיים המגיעים לך כדין.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="NikuimBamakor">ניכויים במקור :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">הינו תשלום ששולם על ידך במהלך שנת המס על הכנסותיך. היות
+						והמס מחושב על בסיס שנתי הניכוי מס במקור הינו תשלום על חשבון המס המגיע ממך בתום
+						השנה. לעיתים הניכוי במקור נמוך מחבות המס המגיעה ממך ולעיתים גבוהה ממנה. במידה
+						וסך הניכוי מס במקור עולה על המס המגיע תוצאת המס היא החזר מס ויסומן בסימן מינוס
+						( - ). במידה ויש לכם הכנסות שאינן מעסק או ממשכורת (כגון שכר סופרים, מרצים, שכר
+						דירקטורים או אומנים), סכום הניכוי מס במקור הינם הסכומים המופיעים <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes837-857');">
+                            <u>בטופסי 837 / 857</u></a> <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes867');">
+                                <u>ו- 867</u></a> שקיבלתם.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText"><strong>לדוגמא :</strong> שכיר יראה ב<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');"><u>טופס
+								106</u></a> שדה 042 המציין את סכומי המס במקור שנוכו ממנו במהלך השנה על
+						חשבון חבות המס השנתית ( זהו מס ההכנסה המשולם מידי חודש על המשכורת ).
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="MasNikuiBamkor">מס לאחר ניכוי במקור :</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">זהו הנתון המציין את יתרת המס לתשלום או המס להחזר לאחר כל
+						הנתונים הרלוונטיים שהזנתם בסימולטור.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם המספר שלילי, אז לפי הנתונים שהזנת מגיע לך החזר מס
+						בסכום המצויין.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">אם המספר הוא חיובי או אפס אז לא מגיע לך החזר.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">חישוב המס מבוסס אך ורק על הנתונים שהוזנו על ידך.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">סכום המס המחושב אינו כולל ריבית והפרשי הצמדה כמשמעותם
+						בסעיף 159א לפקודת מס הכנסה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">התוצאה שקיבלתם היא המס לאחר סכומים שנוכו לכם במקור בלבד.
+						אם במהלך השנה שולמו על ידיך סכומים על חשבון המס או אם היית זכאי לפטור לפי <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Seif125');">סעיף 125 (ד) ו- (ה)</a> לפקודת מס הכנסה והוחזרו כספים לחשבונך בבנק, עליך
+						לקחת בחשבון בחישוב המס את הסכומים הללו להורידם או להוסיפם לתוצאת המס שהתקבלה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertRashi" id="FQA" colspan="2">שאלות נפוצות</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="QExplorer"><a class="clsLinkText" href="javascript:GoToHref('Explorer');"><u>כיצד
+								ניתן לצפות בצורה הטובה ביותר דרך הדפדפן בסימולטור?</u></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="QAnonymous"><a class="clsLinkText" href="javascript:GoToHref('Anonymous');"><u>האם
+								מילוי הסימולטור הוא אנונימי?</u></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="QExtraHelp"><a class="clsLinkText" href="javascript:GoToHref('ExtraHelp');"><u>כיצד
+								ניתן לקבל הסבר פרטני למילוי הדוח?</u></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="QMismahim"><a class="clsLinkText" href="javascript:GoToHref('Mismahim');"><u>איזה
+								מסמכים עלי לצרף אם החלטתי להגיש את הדוח?</u></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="Explorer">כיצד ניתן לצפות בצורה הטובה ביותר דרך
+						הדפדפן בסימולטור? הדפדפן בסימולטור
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">עבודה עם דפדפן Internet Explorer מגירסה 6. חלון הדפדפן
+						פתוח לגודל המקסימלי. קידוד של עברית : (windows)עברית.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">לניווט בדפי הסימולטור מומלץ להשתמש בכפתורים והתפריטים של
+						סימולטור המס כגון: הדפסה,חזרה, וכו'.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="Anonymous">האם מילוי הסימולטור הוא אנונימי?</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">מילוי הסימולטור הוא אנונימי לחלוטין, לא נדרשים פרטים
+						מזהים, ולא נשמר שום מידע במחשב האגף לאחר היציאה מהסימולטור. במקרה שרוצים לשמור
+						את הדוח, הדוח ישמר במחשב המשתמש, בצורת cookie.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="ExtraHelp">כיצד ניתן לקבל הסבר פרטני למילוי הדוח?</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">קליק על חלקים שונים בדוח יפתח חלון הסבר מתאים. לדוגמא:
+						קליק על קוד 158 יפתח חלון שמסביר מהו הקוד, וכיצד צריך למלא אותו כמו כן לחיצה על
+						חלקים שונים בטבלת תוצאת החישוב, תפתח חלון שיסביר את מרכיבי החישוב.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertMisheni" id="Mismahim">במידה והחלטתם להגיש דו"ח עליכם למלא טופס
+						135 בצירוף המסמכים הבאים</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- אישורים על הכנסות כולל הכנסות בן/בת הזוג מכל המקורות: <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes106');">
+                                                            <u>טופסי 106</u></a> מקוריים ממקומות העבודה (גם פנסיונר או עובד עבודה
+						חלקית) <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes837-857');">
+                            <u>וטופסי 837 / 857</u></a> בגין הכנסות ממשלמים אחרים.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- אישורים על קבלת ריבית מתוכניות חיסכון או מפיקדונות
+						אישור זה יינתן ע"י התאגיד הבנקאי שממנו התקבלה הריבית או הפיקדון ( <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes867');">
+                            <u>טופס 867</u></a> ).</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- אישורים על דמי אבטלה, דמי פגיעה בעבודה ו/או תגמולי
+						מילואים מהמוסד לביטוח לאומי.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- אישורים על כל התשלומים לקופות גמל ולביטוח חיים.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- אישורים בגין בני משפחה נטולי יכולת.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- לפורש/ת מעבודה העתק מ<a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes161');"><u>טופס
+								161</u></a> בדבר מענק פרישה מעבודה (פיצויים).</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- ליולדת או לבעלה – אישור מהמוסד לביטוח לאומי על דמי לידה
+						או שמירת היריון.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- לעולה חדש – תאריך עלייה.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- לחייל/ת משוחרר/ת (לרבות שירות לאומי)- תאריך שחרור.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- לתושב /ת יישוב ספר/אזור פיתוח – אישור מהרשות המקומית על
+						תקופת המגורים – <a class="clsLinkText" href="javascript:ShowMilonMunachimFromHelp('Tofes1312');">
+                            <u>טופס 1312 א'</u></a>.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- לזיכוי על פי חוק הנגב – טופס 1312 א' מהרשות המקומית.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- לנכה 100% - אישורים ממשרד הביטחון, משרד האוצר, המוסד
+						לביטוח לאומי (לפי המקרה), או אישור פקיד השומה שניתן לך בעבר. לעיוור/ת – תעודת
+						עיוור שהונפקה ממשרד הרווחה לאחר 1.1.94.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="clsKotertText">- אם עבדתם בשנת המס אצל יותר ממעביד אחד, אשר שילם לקופ"ג
+						או לקרן השתלמות וסך כל משכורותיכם עלו על <span id="Scum_Tiktra1">aaaaa</span>₪
+						- עליכם למלא נספח לחישוב ההכנסה בגין תשלומים עודפים של הפקדות המעביד לקרן
+						השתלמות ולקופ"ג (טופס 134 ).
+                                                        </td>
+                                                    </tr>
+        </table>
+    </form>
+
+
+
+
+
+        </div>
+
+	</div>
+
+
+    <div id="directivesScripts">
+
+    </div>
+
+
+
+<input type="hidden" name="ctl00$HiddenSessionId" id="HiddenSessionId" value="3wfhb1bz4x2nvdpnotgdu2ok" />
+<input type="hidden" name="ctl00$HiddenPageName" id="HiddenPageName" value="help_frmhelp_2022_aspx" />
+
+<script src="../../ShaamlibTemp/scripts2010/Dialog/jquery.ui.dialog.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var _SwTimeOutDialogMaster = 0;
+
+</script>
+</form>
+  </body>
+</html>
+
