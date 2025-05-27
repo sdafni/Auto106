@@ -1,0 +1,18 @@
+<!-- Response from /add-text -->
+<div id="input-container" class="bg-gray-200 p-3 rounded inline-flex items-center space-x-2 transition-all duration-300">
+  <input
+    name="input"
+    value="Hello +item"
+    size="11"
+    class="bg-white border border-gray-300 px-2 py-1 rounded min-w-[5ch]"
+  />
+
+  <button
+    hx-get="/add-text"
+    hx-target="#input-container"
+    hx-swap="outerHTML"
+    class="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+  >
+    Add
+  </button>
+</div>

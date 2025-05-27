@@ -31,6 +31,7 @@ app = FastAPI()
 # progress
 # ui report on whats found
 # choose sim or tax report
+# add delete option, requires db/mem-db
 
 
 # Set up static files and templates

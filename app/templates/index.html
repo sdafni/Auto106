@@ -1,15 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<div class="max-w-2xl mx-auto">
-    <div class="bg-white rounded-lg shadow-md p-6 m-4">
+    <div class="bg-white rounded-lg shadow-md p-6 m-4 max-w-3xl mx-auto">
         <!-- Uploaded files section (hidden by default) -->
         <div id="uploaded-files-section" class="hidden">
             <div class="flex justify-center mb-4">
                 <h2 class="text-xl font-semibold text-center">קבצים שהועלו</h2>
             </div>
-            <div class="mb-6">
+            <div class="mb-6 ">
                 <div class="overflow-x-auto">
                     <table class="w-full text-left">
                         <thead class="bg-gray-100">
@@ -17,7 +15,7 @@
                                 <th class="px-4 py-2">שם הקובץ</th>
                                 <th class="px-4 py-2">טופס</th>
                                 <th class="px-4 py-2">בן הזוג</th>
-                                <th class="px-4 py-2">ססמא</th>
+                                <th class="px-4 py-2">סיסמא</th>
                             </tr>
                         </thead>
                         <tbody id="files-container">
@@ -31,6 +29,7 @@
         <div class="flex justify-center mt-4 mb-2">
             <h2 class="text-xl font-semibold text-center">העלה קובץ חדש</h2>
         </div>
+
         <!-- File Upload Form (Hidden by Default) -->
         <div id="file-form-container" class="mt-4 p-4 border border-gray-200 rounded-md bg-gray-50 fade-in">
             <form
@@ -43,7 +42,7 @@
                 class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 items-stretch">
 
                 <!-- File input and label inline -->
-                <div class="flex flex-row items-end w-full md:w-auto space-x-2 rtl:space-x-reverse">
+                <div class="flex flex-row items-end flex-1 space-x-2 rtl:space-x-reverse">
                     <input
                         type="file"
                         name="file"
@@ -57,15 +56,16 @@
                         class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                        בחירת קובץ
                     </button>
-                    <span id="file-label" class="block text-xs text-gray-700 truncate"></span>
+                </div>
+                <div id="file-label" class="flex flex-col justify-end flex-1 max-w-fit min-w-0 block text-xs text-gray-700 truncate" style="width:auto; min-width:0; padding:0;">
                 </div>
                 <!-- Form fields -->
-                <div class="flex flex-col justify-end w-full md:w-auto">
+                <div class="flex flex-col justify-end flex-1">
                     <label class="block text-sm font-medium text-gray-700 mb-1">טופס</label>
                     <select
                         name="form_name"
                         required
-                        class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm w-full">
                         <option value="106" selected>106</option>
                         <option value="161">161</option>
                         <option value="837">837</option>
@@ -76,29 +76,29 @@
                         <option value="867ג">867ג</option>
                     </select>
                 </div>
-                <div class="flex flex-col justify-end w-full md:w-auto">
+                <div class="flex flex-col justify-end flex-1">
                     <label class="block text-sm font-medium text-gray-700 mb-1">בן הזוג</label>
                     <select
                         name="category"
                         required
-                        class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm w-full">
                         <option value="main" selected>עיקרי</option>
                         <option value="partner">השני</option>
                     </select>
                 </div>
-                <div class="flex flex-col justify-end w-full md:w-auto">
+                <div class="flex flex-col justify-end flex-1">
                     <label class="block text-sm font-medium text-gray-700 mb-1">סיסמא</label>
                     <input
                         type="password"
                         name="pdf_password"
-                        class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                        class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm w-full"
                         placeholder="Leave empty if no password">
                 </div>
-                <div class="flex flex-col justify-end w-full md:w-auto">
-                    <label class="block text-sm font-medium text-gray-700 mb-1 invisible">העלה</label>
+                <div class="flex flex-col justify-end flex-1 ">
                     <button
                         type="submit"
-                        class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+
+                        class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                         העלה
                     </button>
                 </div>
@@ -111,8 +111,7 @@
             Open Auto-Fill Browser
         </button>
     </div>
-    <div id="stats-container"  class="bg-white rounded-lg shadow-md p-6 m-4" ></div>
-</div>
+    <div id="stats-container" class="bg-white rounded-lg shadow-md p-6 m-4 max-w-3xl mx-auto"></div>
 
 <script>
     // Show selected file name
