@@ -28,6 +28,9 @@ app = FastAPI()
 # user session results etc, ask fastapi
 # let ai process pdfs
 # have user select simulator or report
+# progress
+# ui report on whats found
+# choose sim or tax report
 
 
 # Set up static files and templates

@@ -25,21 +25,9 @@
 
     </div>
 
-    <!-- Add New File Button -->
-    <div class="flex justify-start">
-        <button
-            id="add-file-btn"
-            class="flex items-center gap-1 text-blue-600 font-medium"
-            onclick="toggleFileForm()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 3a1 1 0 00-1 1v5H4a1 1 0 100 2h5v5a1 1 0 102 0v-5h5a1 1 0 100-2h-5V4a1 1 0 00-1-1z" clip-rule="evenodd" />
-            </svg>
-            Add File
-        </button>
-    </div>
 
     <!-- File Upload Form (Hidden by Default) -->
-    <div id="file-form-container" class="hidden mt-4 p-4 border border-gray-200 rounded-md bg-gray-50 fade-in">
+    <div id="file-form-container" class=" mt-4 p-4 border border-gray-200 rounded-md bg-gray-50 fade-in">
         <form
             id="upload-form"
             hx-post="/upload-file/"

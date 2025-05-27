@@ -13,8 +13,7 @@ import re
 from app import state
 from forms.dagshub_ocr_old.form_ocr import process
 from dotenv import load_dotenv
-load_dotenv()
-
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '.env'))
 os.environ['PATH'] = '/opt/homebrew/bin:' + os.environ['PATH']  # Only if needed
 
 
@@ -39,48 +38,62 @@ def process_file_content( content: bytes, filename: str, form_name: str, categor
     file_ext = filename.lower().split('.')[-1] if '.' in filename else ''
 
     if file_ext == 'pdf':
-        print("Detected PDF file")
-        with pdfplumber.open(BytesIO(content), password=password) as pdf:
-            #
-            # attempt text analysis
-            #
-            state.init_results()
 
-            all_text = ""
-            for page in pdf.pages:
-                text = page.extract_text()
-                if text and text.strip():
-                    all_text += text + "\n"
-            if all_text.strip():
-                res_dict = look_for_codes(all_text, form_name, category)
+        def extract_text_method1(content, password):
+            with pdfplumber.open(BytesIO(content), password=password) as pdf:
+                #
+                # attempt text analysis
+                #
 
-        if not res_dict_has_essentials(res_dict):
+                all_text = ""
+                for page in pdf.pages:
+                    text = page.extract_text()
+                    if text and text.strip():
+                        all_text += text + "\n"
+            return all_text
+
+        def extract_text_method2(content, password):
             # attempt OCR 1
-            state.init_results()
-
-
             # Process PDF with OCR 1
             images = convert_pdf_bytes_to_images(content, password)
-
-
             text = ""
             text = process(images, text)
+            return text
 
-            res_dict = look_for_codes(text, form_name, category)
 
-            if not res_dict_has_essentials(res_dict):
-                # yuvald TODO attempt OCR 2?
+        for method in [extract_text_method1, extract_text_method2]:
+            try:
                 state.init_results()
 
+                text = method(content, password)
+                if len(re.findall(r'[\u0590-\u05FF]{2,}', text)) < 10:
+                    print(f"{method.__name__}: Less than 10 Hebrew words")
+                    continue
 
-                # For other file types, skip OCR
+                res_dict = look_for_codes(text, form_name, category)
+
+                if not res_dict_has_essentials(res_dict):
+                    print(f"{method.__name__}: res_dict_has_essentials = False")
+                    continue
+
+                print(f"Success with {method.__name__}: {res_dict}")
                 return {
-                    "status": "Skipped - Couldn't find known fields",
+                    "status": "Processed",
                     "file_type": file_ext,
                     "size": len(content),
                     "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 }
-
+            except Exception as e:
+                print(f"{method.__name__} failed: {e}")
+                continue
+        print("All methods failed.")
+        # For other file types, skip OCR
+        return {
+            "status": "Skipped - Couldn't find known fields",
+            "file_type": file_ext,
+            "size": len(content),
+            "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
     elif file_ext in ['jpg', 'jpeg', 'png']:
         pass
     else:
@@ -91,12 +104,7 @@ def process_file_content( content: bytes, filename: str, form_name: str, categor
             "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         }
 
-    return {
-        "status": "Processed",
-        "file_type": file_ext,
-        "size": len(content),
-        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
+
     """Process the file content directly without saving to disk"""
 
 
@@ -121,7 +129,7 @@ def convert_pdf_bytes_to_images(pdf_bytes, password=None, save_dir="output_image
             output.close()
 
     # Convert decrypted PDF to images
-    images = convert_from_bytes(pdf_bytes, dpi=700)
+    images = convert_from_bytes(pdf_bytes, dpi=800)
 
     # Ensure the output directory exists
     os.makedirs(save_dir, exist_ok=True)
@@ -291,6 +299,7 @@ def llm_process_text_for_codes(text, known_codes, partner_known_codes):
 
 
     except Exception as e:
+        # yuvald TODO handle exception properly
         print(f"Error calling DeepSeek API: {e}")
         return False
 
