@@ -75,7 +75,7 @@ async def upload_file(
     # Generate HTML for the stats table
     stats_html = generate_stats_html()
     password_used = "כן" if password else "לא"
-
+    category = "עיקרי" if category == "main" else "השני"
     # Return combined HTML fragments
     return f"""
     <tr id="file-{file_id}" class="border-b hover:bg-gray-50">

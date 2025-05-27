@@ -2,112 +2,130 @@
 
 {% block content %}
 
-<div class="bg-white rounded-lg shadow-md p-6 m-4">
-    <div class="flex justify-center mb-4">
-        <h2 class="text-xl font-semibold text-center">קבצים שהועלו</h2>
-    </div>
+<div class="max-w-2xl mx-auto">
+    <div class="bg-white rounded-lg shadow-md p-6 m-4">
+        <div class="flex justify-center mb-4">
+            <h2 class="text-xl font-semibold text-center">קבצים שהועלו</h2>
+        </div>
 
-    <div class="mb-6">
-        <div class="overflow-x-auto">
-            <table class="w-full text-left">
-                <thead class="bg-gray-100">
-                    <tr>
-                        <th class="px-4 py-2">שם הקובץ</th>
-                        <th class="px-4 py-2">טופס</th>
-                        <th class="px-4 py-2">בן הזוג</th>
-                        <th class="px-4 py-2">ססמא</th>
-                    </tr>
-                </thead>
-                <tbody id="files-container">
-                    <!-- Processed files will appear here -->
-                </tbody>
-            </table>
+        <div class="mb-6">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="px-4 py-2">שם הקובץ</th>
+                            <th class="px-4 py-2">טופס</th>
+                            <th class="px-4 py-2">בן הזוג</th>
+                            <th class="px-4 py-2">ססמא</th>
+                        </tr>
+                    </thead>
+                    <tbody id="files-container">
+                        <!-- Processed files will appear here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-4 mb-2">
+            <h2 class="text-xl font-semibold text-center">העלה קובץ חדש</h2>
+        </div>
+        <!-- File Upload Form (Hidden by Default) -->
+        <div id="file-form-container" class=" mt-4 p-4 border border-gray-200 rounded-md bg-gray-50 fade-in">
+            <form
+                id="upload-form"
+                hx-post="/upload-file/"
+                hx-encoding="multipart/form-data"
+                hx-target="#files-container"
+                hx-swap="beforeend"
+                hx-on::after-request="resetFileForm()"
+                class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+
+                <div class="col-span-1 flex flex-col items-center">
+                    <!-- Hidden file input -->
+                    <input
+                        type="file"
+                        name="file"
+                        required
+                        title="בחר קובץ"
+                        class="hidden"
+                        id="file-input"
+                    >
+                    <!-- Custom upload button -->
+                    <button type="button"
+                        onclick="document.getElementById('file-input').click();"
+                        class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        my upload
+                    </button>
+                </div>
+
+                <div class="col-span-1">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">טופס</label>
+                    <select
+                        name="form_name"
+                        required
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        <option value="106" selected>106</option>
+                        <option value="161">161</option>
+                        <option value="837">837</option>
+                        <option value="857">857</option>
+                        <option value="134">134</option>
+                        <option value="858">858</option>
+                        <option value="867">867</option>
+                        <option value="867ג">867ג</option>
+                    </select>
+                </div>
+
+                <div class="col-span-1">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">בן הזוג</label>
+                    <select
+                        name="category"
+                        required
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        <option value="main" selected>עיקרי</option>
+                        <option value="partner">השני</option>
+                    </select>
+                </div>
+
+                <div class="col-span-1">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">סיסמא</label>
+                    <input
+                            type="password"
+                            name="pdf_password"
+                            class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                            placeholder="Leave empty if no password">
+                </div>
+
+                <div class="col-span-1">
+                <button
+                        type="submit"
+                        class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        העלה
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-
-    <div class="flex justify-center mt-4 mb-2">
-        <h2 class="text-xl font-semibold text-center">העלה קובץ חדש</h2>
+    <div class="mt-4 flex justify-center">
+        <button onclick="triggerAutoFill()" 
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Open Auto-Fill Browser
+        </button>
     </div>
-    <!-- File Upload Form (Hidden by Default) -->
-    <div id="file-form-container" class=" mt-4 p-4 border border-gray-200 rounded-md bg-gray-50 fade-in">
-        <form
-            id="upload-form"
-            hx-post="/upload-file/"
-            hx-encoding="multipart/form-data"
-            hx-target="#files-container"
-            hx-swap="beforeend"
-            hx-on::after-request="resetFileForm()"
-            class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
-
-            <div class="col-span-1">
-                <input
-                    type="file"
-                    name="file"
-                    required
-                    class="block w-full text-sm text-gray-500
-                           file:mr-4 file:py-2 file:px-4
-                           file:rounded-md file:border-0
-                           file:text-sm file:font-semibold
-                           file:bg-blue-50 file:text-blue-700
-                           hover:file:bg-blue-100">
-            </div>
-
-            <div class="col-span-1">
-                <label class="block text-sm font-medium text-gray-700 mb-1">טופס</label>
-                <select
-                    name="form_name"
-                    required
-                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                    <option value="106" selected>106</option>
-                    <option value="161">161</option>
-                    <option value="837">837</option>
-                    <option value="857">857</option>
-                    <option value="134">134</option>
-                    <option value="858">858</option>
-                    <option value="867">867</option>
-                    <option value="867ג">867ג</option>
-                </select>
-            </div>
-
-            <div class="col-span-1">
-                <label class="block text-sm font-medium text-gray-700 mb-1">בן הזוג</label>
-                <select
-                    name="category"
-                    required
-                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                    <option value="main" selected>עיקרי</option>
-                    <option value="partner">השני</option>
-                </select>
-            </div>
-
-            <div class="col-span-1">
-                <label class="block text-sm font-medium text-gray-700 mb-1">סיסמא</label>
-                <input
-                        type="password"
-                        name="pdf_password"
-                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                        placeholder="Leave empty if no password">
-            </div>
-
-            <div class="col-span-1">
-            <button
-                    type="submit"
-                    class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    העלה
-                </button>
-            </div>
-        </form>
-    </div>
+    <div id="stats-container"  class="bg-white rounded-lg shadow-md p-6 m-4" ></div>
 </div>
-<div class="mt-4 flex justify-center">
-    <button onclick="triggerAutoFill()" 
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Open Auto-Fill Browser
-    </button>
-</div>
-<div id="stats-container"  class="bg-white rounded-lg shadow-md p-6 m-4" ></div>
 
 <script>
+    // Show selected file name
+    document.addEventListener('DOMContentLoaded', function() {
+        const fileInput = document.getElementById('file-input');
+        const fileLabel = document.getElementById('file-label');
+        if (fileInput) {
+            fileInput.addEventListener('change', function() {
+                fileLabel.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : '';
+            });
+        }
+    });
+
     function toggleFileForm() {
         const formContainer = document.getElementById('file-form-container');
         const isHidden = formContainer.classList.contains('hidden');
@@ -121,7 +139,7 @@
 
     function resetFileForm() {
         document.getElementById('upload-form').reset();
-
+        document.getElementById('file-label').textContent = '';
         // Don't hide the form, so the user can add multiple files easily
         // If you want to hide it, uncomment the next line
         // document.getElementById('file-form-container').classList.add('hidden');
@@ -144,3 +162,4 @@
 }
 </script>
 {% endblock %}
+
