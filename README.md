@@ -1,0 +1,3 @@
+# A tool to help file tax reports/refunds. 
+- uses OCR+LLms to process forms
+# Under construction...
