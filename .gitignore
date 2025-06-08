@@ -1,0 +1,10 @@
+/tests/output_images/
+/.venv/
+/.venv1/
+/app/.env
+/pdf_images/
+/app/forms/
+/app/output_images/
+/.idea/
+__pycache__/
+

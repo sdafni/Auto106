@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <style>
+        /* Additional custom styles can go here */
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-blue-50 min-h-screen">
+<nav class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-center">
+        <h1 class="text-xl font-bold text-center">מסטומט</h1>
+    </div>
+</nav>
+
+<main class="container mx-auto p-4 mt-4">
+
+    <div id="uploaded-files-section" class="hidden bg-white rounded-lg shadow-md p-6 m-4 max-w-3xl mx-auto">
+        <div class="flex justify-center mb-4">
+             <h2 class="text-xl font-semibold text-center text-green-600">קבצים שהועלו</h2>
+        </div>
+        <div class="mb-6 ">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-100">
+                    <tr>
+                        <th class="px-4 py-2 text-sm">שם הקובץ</th>
+                        <th class="px-4 py-2 text-sm">טופס</th>
+                        <th class="px-4 py-2 text-sm">בן הזוג</th>
+                        <th class="px-4 py-2 text-sm">סיסמא</th>
+                    </tr>
+                    </thead>
+                    <tbody id="files-container">
+
+                    <tr id="file-34342" class="border-b hover:bg-gray-50">
+                        <td class="py-2 px-4 text-sm">example</td>
+                        <td class="py-2 px-4 text-sm">106</td>
+                        <td class="py-2 px-4 text-sm">fff</td>
+                        <td class="py-2 px-4 text-sm">no</td>
+                    </tr>
+
+                    <!-- Processed files will appear here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-6 m-6 max-w-3xl mx-auto">
+
+
+        <div class="flex justify-center mt-4 mb-4">
+            <h2 class="text-xl font-semibold text-center text-green-600">העלה קובץ חדש</h2>
+        </div>
+
+        <form
+                id="upload-form"
+                hx-post="/upload-file/"
+                hx-encoding="multipart/form-data"
+                hx-target="#files-container"
+                hx-swap="beforeend"
+                hx-on::after-request="resetFileForm()"
+                class="flex flex-col space-y-4">
+
+            <!-- File Upload FIRST -->
+            <div class="flex flex-row items-center space-x-2">
+                <label for="file-input" id="file-label"
+                       class="block w-max text-sm font-medium text-gray-700 mb-1 border border-blue-300 rounded-md px-4 py-[0.375rem] bg-blue-50 cursor-pointer transition-colors duration-150 hover:bg-blue-100 active:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 leading-5"
+                       style="height: 2rem;">
+                    בחר קובץ
+                </label>
+                <input id="file-input" title="בחר קובץ" type="file" name="file" class="hidden"
+                       onchange="updateFileLabel()"/>
+                <span id="file-chosen-text" class="text-xs text-gray-500 mt-1 text-left block truncate max-w-[120px]">לא נבחר קובץ</span>
+            </div>
+
+            <!-- Other Inputs BELOW -->
+            <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+                <div class="flex flex-col flex-1">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">טופס</label>
+                    <select name="form_name" required
+                            class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm w-full">
+                        <option value="106" selected>106</option>
+                        <option value="161">161</option>
+                        <option value="837">837</option>
+                        <option value="857">857</option>
+                        <option value="134">134</option>
+                        <option value="858">858</option>
+                        <option value="867">867</option>
+                        <option value="867ג">867ג</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col flex-1">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">בן הזוג</label>
+                    <select name="category" required
+                            class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm w-full">
+                        <option value="main" selected>עיקרי</option>
+                        <option value="partner">השני</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col flex-1">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">סיסמא</label>
+                    <input type="password" name="pdf_password"
+                           class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm w-full"
+                           placeholder="Leave empty if no password">
+                </div>
+
+                 <div class="flex flex-col flex-1">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">not llm</label>
+                    <input type="checkbox" name="use_local_extract"
+                           class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm w-full"
+                           >
+                </div>
+
+
+
+                <div class="flex flex-col justify-end flex-1">
+                    <button type="submit"
+                            class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        העלה
+                    </button>
+                </div>
+
+
+            </div>
+        </form>
+
+    </div>
+    <div class="mt-4 flex justify-center">
+        <button onclick="triggerAutoFill()"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Open Auto-Fill Browser
+        </button>
+    </div>
+    <div id="stats-container" class="bg-white rounded-lg shadow-md p-6 m-4 max-w-3xl mx-auto"></div>
+
+    <script>
+        function showTable() {
+            const filesContainer = document.getElementById('files-container');
+            const uploadedSection = document.getElementById('uploaded-files-section');
+            if (filesContainer && uploadedSection && filesContainer.children.length > 0) {
+                uploadedSection.classList.remove('hidden');
+            }
+        }
+
+        // Show selected file name and update label
+        function updateFileLabel() {
+            const fileInput = document.getElementById('file-input');
+            const fileLabel = document.getElementById('file-label');
+            const fileChosenText = document.getElementById('file-chosen-text');
+            if (fileInput.files.length > 0) {
+                fileChosenText.textContent = fileInput.files[0].name;
+            } else {
+                fileChosenText.textContent = 'לא נבחר קובץ';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            updateFileLabel();
+
+
+// Only show if the upload was successful and a row was added
+            showTable();
+        });
+
+        // // Show selected file name
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const fileInput = document.getElementById('file-input');
+        //     const fileLabel = document.getElementById('file-label');
+        //     if (fileInput) {
+        //         fileInput.addEventListener('change', function() {
+        //             fileLabel.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : '';
+        //         });
+        //     }
+        // });
+
+        // Show uploaded files section after first upload
+        document.addEventListener('htmx:afterOnLoad', function (evt) {
+            showTable();
+        });
+
+
+        function resetFileForm() {
+            document.getElementById('upload-form').reset();
+            const fileChosenText = document.getElementById('file-chosen-text');
+            fileChosenText.textContent = 'לא נבחר קובץ';
+
+            //document.getElementById('file-label').textContent = '';
+            // Don't hide the form, so the user can add multiple files easily
+            // If you want to hide it, uncomment the next line
+            // document.getElementById('file-form-container').classList.add('hidden');
+        }
+
+        function triggerAutoFill() {
+            fetch('/auto-fill/', {
+                method: 'POST',
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'error') {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error occurred while trying to auto-fill');
+                });
+        }
+    </script>
+</main>
+
+<!--<footer class="bg-gray-100 p-4 mt-8 border-t">-->
+<!--    <div class="container mx-auto text-center text-gray-500 text-sm">-->
+<!--        FastAPI + HTMX + Tailwind File Uploader-->
+<!--    </div>-->
+<!--</footer>-->
+</body>
+</html>
+
