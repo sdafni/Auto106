@@ -160,7 +160,6 @@ def generate_stats_html() -> str:
 
 
 if __name__ == "__main__":
-    pass
-    #import uvicorn
-
-    # uvicorn.run(app, host="0.0.0.0", port=8000)
+    if not os.environ.get("IS_RENDER"):
+        import uvicorn
+        uvicorn.run(app, host="0.0.0.0", port=8000)
