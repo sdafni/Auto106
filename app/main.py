@@ -10,6 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import os
+from pathlib import Path
 
 from app import state
 from app.proc import process_file_content
@@ -33,10 +34,11 @@ app = FastAPI()
 # add delete option, requires db/mem-db
 # filter out 1 shekel
 # better do the fallback of options (re-search code concept)
-
+# Get the directory where main.py is located
+BASE_DIR = Path(__file__).resolve().parent
 # Set up static files and templates
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
+templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 
 
